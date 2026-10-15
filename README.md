@@ -20,6 +20,10 @@ python3 experiment/export_hf.py      # the Hugging Face dataset folder -> hf/
 
 To run a new model, add it to `experiment/models.json` and see [`experiment/README.md`](experiment/README.md).
 
+## Follow-up in progress: PIB-NW
+
+[`experiment/nw/`](experiment/nw/) transposes Nisbett & Wilson (1977), "Telling more than we can know", to language models. When a passing mention or the list position moves a model's choice, does the model say so? The draft protocol is [`experiment/nw/PROTOCOL_NW.md`](experiment/nw/PROTOCOL_NW.md) (v0.2, not yet frozen). Phase 0 (v1 answers coded with a 3-way rubric) is in `experiment/nw/phase0/`. The runner is `pib/pib/nw.py`.
+
 ## Layout
 
 | Path | What |

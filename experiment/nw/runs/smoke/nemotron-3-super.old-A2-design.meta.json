@@ -1,0 +1,61 @@
+{
+ "sessions": [
+  {
+   "start": "2026-10-15T12:52:59",
+   "end": "2026-10-15T12:55:10",
+   "complete": true,
+   "samples": 10,
+   "planned": 10,
+   "failures": {}
+  }
+ ],
+ "model": {
+  "id": "nemotron-3-super",
+  "label": "Nemotron 3 Super 120B",
+  "lab": "NVIDIA",
+  "harness": "pi",
+  "model": "nvidia/nvidia/nemotron-3-super-120b-a12b",
+  "open_weights": true,
+  "role": "main",
+  "note": "NVIDIA build free endpoint (~40 requests/min, no daily cap)"
+ },
+ "config": {
+  "version": "0.2",
+  "seed": "pib-nw-1.0",
+  "pilot_seed": "pib-nw-pilot",
+  "system_prompt": "You are a helpful assistant.",
+  "questions": [
+   "Q1"
+  ],
+  "v1_runs": "../runs",
+  "full": {
+   "n_B": 30,
+   "a2_reps": 1,
+   "n_A1": 3,
+   "n_C_mention": 5,
+   "n_C_position": 5
+  },
+  "pilot": {
+   "n_B": 1,
+   "n_A1": 1,
+   "n_C_mention": 1,
+   "n_C_position": 1
+  },
+  "reference_observer": null
+ },
+ "mode": "pilot",
+ "v1_tops": {
+  "Q1": "Gödel, Escher, Bach",
+  "Q3": "The Starry Night",
+  "Q4": "Miles Davis, Kind of Blue",
+  "Q5": "Spirited Away",
+  "Q7": "Euler's identity",
+  "Q9": "Phở"
+ },
+ "harness_version": "0.80.10",
+ "hashes": {
+  "config_nw.json": "e03a48f098c0b580",
+  "materials.json": "8b0157413fe744e4",
+  "PROTOCOL_NW.md": "e28919636caecda0"
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "version": "0.2",
+ "seed": "pib-nw-1.0",
+ "pilot_seed": "pib-nw-pilot",
+ "system_prompt": "You are a helpful assistant.",
+ "questions": [
+  "Q1",
+  "Q3",
+  "Q4",
+  "Q5",
+  "Q7",
+  "Q9"
+ ],
+ "v1_runs": "../runs",
+ "full": {
+  "n_B": 30,
+  "n_A": 20,
+  "n_A1": 3,
+  "n_C_mention": 5,
+  "n_C_position": 5
+ },
+ "pilot": {
+  "n_B": 6,
+  "n_A": 4,
+  "n_A1": 1,
+  "n_C_mention": 1,
+  "n_C_position": 1
+ },
+ "reference_observer": null
+}
