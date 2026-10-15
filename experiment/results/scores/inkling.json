@@ -563,7 +563,7 @@
   "T4_mock_post_switch_gt_confirm": 2.2005372196622047e-25,
   "T5_endorse_post_adoption_gt_confirm": 1.0,
   "T6_real_contexts_differ_from_filler": 0.08695652173913043,
-  "T7_position_bias": 0.0004997501249375312,
+  "T7_position_bias": 9.99990000099999e-06,
   "T8_pair_order_consistency_gt_chance": 0.0031088013296633353
  },
  "secondary_tests": {

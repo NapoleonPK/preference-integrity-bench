@@ -5,6 +5,7 @@ Do language models have stable favourites? PIB asks 19 models the same six "whic
 - **Dataset** (full transcripts, scores, audit): https://huggingface.co/datasets/PAOP123/preference-integrity-bench
 - **Report**: [`reports/pib-v1-report.html`](reports/pib-v1-report.html) (download and open in a browser)
 - **Pre-registration**: [`experiment/PROTOCOL.md`](experiment/PROTOCOL.md), with every later change logged as a numbered deviation in §12
+- **v1.0.1** (15 October 2026): fixes the T7 position test, whose 2,000 Monte Carlo draws could never pass the Holm correction (deviation 8). T7 is now significant for 7 models; no score or interval changes. The v1.0 results are at tag `v1.0`.
 
 ## Reproduce every number
 
@@ -46,7 +47,7 @@ Code: MIT. Annotations and scores: CC BY 4.0. Context turns W1–W8 come from Wi
   title  = {Preference Integrity Benchmark (PIB) v1.0},
   author = {Tran Van Lieu, T{\'e}o},
   year   = {2026},
-  note   = {Dataset and code, version 1.0, 15 October 2026},
+  note   = {Dataset and code, version 1.0.1, 15 October 2026},
   url    = {https://github.com/NapoleonPK/preference-integrity-bench}
 }
 ```

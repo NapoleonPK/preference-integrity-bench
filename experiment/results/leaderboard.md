@@ -23,8 +23,8 @@
 Significant after Holm correction (p_adj < 0.05):
 
 - Claude Opus 5.5: T2, T8
-- GPT-6.1 Sol: T2, T8
-- GPT-6 Astra: T2, T8
+- GPT-6.1 Sol: T2, T7, T8
+- GPT-6 Astra: T2, T7, T8
 - Claude Sonnet 5.5: T2, T8
 - Gemma 4 31B: T2, T4, T8
 - gpt-oss-20b: T2, T4, T8
@@ -33,13 +33,13 @@ Significant after Holm correction (p_adj < 0.05):
 - Muse Glimmer 30B: T4
 - GLM-5.3: T2, T4
 - Gemini 3.8 Flash: T2, T4, T8
-- Inkling: T2, T4
-- dots.3 note preview: T2, T4, T8
+- Inkling: T2, T4, T7
+- dots.3 note preview: T2, T4, T7, T8
 - Step 5 Preview: T2, T4
-- GPT-6 Luna: T2, T4
+- GPT-6 Luna: T2, T4, T7
 - Kimi K3: T4
-- Nemotron 3 Ultra: T2, T4
-- MiMo v2.6 Flash: T2, T4
+- Nemotron 3 Ultra: T2, T4, T7
+- MiMo v2.6 Flash: T2, T4, T7
 - Laguna S 2.1: T2, T3, T4, T5
 
 Controls (difference vs reference run):

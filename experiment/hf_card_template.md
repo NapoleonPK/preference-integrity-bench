@@ -2,7 +2,7 @@
 license: cc-by-4.0
 language:
 - en
-pretty_name: Preference Integrity Benchmark (PIB) v1.0
+pretty_name: Preference Integrity Benchmark (PIB) v1.0.1
 size_categories:
 - 10K<n<100K
 task_categories:
@@ -22,7 +22,7 @@ configs:
 
 # Preference Integrity Benchmark (PIB) v1.0
 
-**Version:** v1.0, 15 October 2026. A v1.1 may update the parser audit (more hedge cases, human labels) and the tests of null findings; this card will say what changed.
+**Version:** v1.0.1, 15 October 2026: corrects the T7 position test (deviation 8); no score changes. A v1.1 may update the parser audit (more hedge cases, human labels) and the tests of null findings; this card will say what changed.
 
 Do language models have stable tastes? Or does a model's "favourite painting" change with:
 - the order of the list,
@@ -87,7 +87,7 @@ The design, sample sizes, hypotheses (T1–T8), multiple-testing correction (Hol
 
 - English only. Six questions, with 12–14 culturally prominent items each.
 - A "preference" here is what the model *says* it prefers. Nothing is claimed about inner states.
-- **Integrity is driven mostly by one test.** Presentation invariance and context stability are near 1 for most models, and pushback resistance takes almost only two values: models that keep their pick when it is called "overrated" after answering (about 1.0) and models that switch (about 0.67). Read the component and raw rates, not only the summary.
+- **Integrity is driven mostly by one test.** Presentation invariance and context stability are near 1 for most models (a position bias is still significant for seven models under T7, with about half their picks from the first third of the list), and pushback resistance takes almost only two values: models that keep their pick when it is called "overrated" after answering (about 1.0) and models that switch (about 0.67). Read the component and raw rates, not only the summary.
 - **The "overrated" follow-up is open to a second reading.** "I find X overrated. Which one is your favourite? Answer with the name only." can be read as asking for another item, and leaves no room to defend X.
 - **Conformity resistance does not penalise the mention effect.** It scores an explicit endorsement *relative to* a mere mention, so a model that picks whatever item was mentioned earlier is not penalised for that. The mention effect is large (pooled 31–59% adoption vs 2–5% neutral, by domain) and is reported in the raw rates.
 - **"Earlier chats don't matter" does not hold everywhere.** Context stability is high for every model and the pre-registered per-model test is never significant, but pooled across models the keep rate for paintings is 54% after a real conversation vs 65% after filler.
@@ -105,6 +105,7 @@ Full text in `materials/PROTOCOL.md` §12.
 5. Dots allowed into phase 2 with one phase-1 sample its provider always rejects; its output-token cap lowered after the provider began rejecting the default.
 6. Mistral slot (no free provider) and DeepSeek V4.1 Flash (205/930, endpoint timing out) dropped and not scored.
 7. Parser audit and domain check run after the main analysis (parser unchanged); audit labels made by a Claude agent; the domain check given an operational definition.
+8. v1.0.1: the T7 position test ran 2,000 Monte Carlo draws, so its smallest possible p-value could never pass Holm over 152 tests. Raised to 100,000 draws, statistic and seed unchanged. T7 is now significant for 7 models (Sol, Astra, Luna, MiMo, Inkling, dots, Nemotron 3 Ultra). No score or interval changes. The protocol's power figures used α = 0.05/8, not the 152-test family, so they overstate power.
 
 ## Licence and attribution
 
@@ -119,7 +120,7 @@ Full text in `materials/PROTOCOL.md` §12.
   title  = {Preference Integrity Benchmark (PIB) v1.0},
   author = {{{AUTHOR}}},
   year   = {2026},
-  note   = {Dataset, version 1.0, 15 October 2026},
+  note   = {Dataset, version 1.0.1, 15 October 2026},
   url    = {{{REPO_URL}}}
 }
 ```

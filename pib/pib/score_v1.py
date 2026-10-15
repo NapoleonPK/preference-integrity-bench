@@ -305,8 +305,10 @@ class ScoreV1:
             hit += tot >= obs - 1e-12
         return (hit + 1) / (perms + 1)
 
-    def position_test(self, sims=2000):
-        """Monte Carlo p-value of the summed chi-square of pick positions vs uniform."""
+    def position_test(self, sims=100_000):
+        """Monte Carlo p-value of the summed chi-square of pick positions vs uniform.
+        100,000 draws (2,000 in v1.0, whose floor of 1/2,001 could not pass Holm over 152 tests;
+        PROTOCOL §12 deviation 8)."""
         stats, sizes = 0.0, []
         for qid, q in self.Q.items():
             K = len(q["items"])
@@ -318,8 +320,16 @@ class ScoreV1:
         if not sizes:
             return None
         rng = random.Random("chi")
-        hit = sum(sum(self._chi([rng.randrange(K) for _ in range(n)], K) for K, n in sizes) >= stats - 1e-9
-                  for _ in range(sims))
+        hit = 0
+        for _ in range(sims):
+            tot = 0.0
+            for K, n in sizes:
+                c = [0] * K
+                for j in rng.choices(range(K), k=n):
+                    c[j] += 1
+                e = n / K
+                tot += sum((x - e) ** 2 for x in c) / e
+            hit += tot >= stats - 1e-9
         return (hit + 1) / (sims + 1)
 
     @staticmethod
