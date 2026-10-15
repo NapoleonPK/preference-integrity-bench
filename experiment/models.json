@@ -1,0 +1,260 @@
+{
+  "_doc": "Model roster for PIB v1.0. role: main (leaderboard + confirmatory tests), harness_control (same model through a second harness, criterion A2), retest (second run with a new seed, criterion C5). verify=true: the exact model id must be checked with the provider (e.g. `pi --list-models`) before the run; record any change here before running.",
+  "models": [
+    {
+      "id": "claude-haiku-5-5",
+      "label": "Claude Haiku 5.5",
+      "lab": "Anthropic",
+      "harness": "claude-cli",
+      "model": "claude-haiku-5-5",
+      "open_weights": false,
+      "role": "main"
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "label": "Claude Sonnet 5.5",
+      "lab": "Anthropic",
+      "harness": "claude-cli",
+      "model": "claude-sonnet-5-5",
+      "open_weights": false,
+      "role": "main"
+    },
+    {
+      "id": "claude-opus-5-5",
+      "label": "Claude Opus 5.5",
+      "lab": "Anthropic",
+      "harness": "claude-cli",
+      "model": "claude-opus-5-5",
+      "open_weights": false,
+      "role": "main",
+      "status": "paused 2026-10-09 at 379/930 samples (cost); not scored unless completed"
+    },
+    {
+      "id": "gpt-6-luna",
+      "label": "GPT-6 Luna",
+      "lab": "OpenAI",
+      "harness": "pi",
+      "model": "openai-codex/gpt-6-luna",
+      "open_weights": false,
+      "role": "main",
+      "verify": false,
+      "note": "Pi, ChatGPT subscription (openai-codex); id checked with `pi --list-models` on 2026-10-09"
+    },
+    {
+      "id": "gpt-6-astra",
+      "label": "GPT-6 Astra",
+      "lab": "OpenAI",
+      "harness": "pi",
+      "model": "openai-codex/gpt-6-astra",
+      "open_weights": false,
+      "role": "main",
+      "verify": false,
+      "note": "Pi, ChatGPT subscription (openai-codex); id checked with `pi --list-models` on 2026-10-09"
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "label": "GPT-6.1 Sol",
+      "lab": "OpenAI",
+      "harness": "pi",
+      "model": "openai-codex/gpt-6.1-sol",
+      "open_weights": false,
+      "role": "main",
+      "verify": false,
+      "note": "Pi, ChatGPT subscription (openai-codex); id checked with `pi --list-models` on 2026-10-09"
+    },
+    {
+      "id": "mimo-v2.6-flash",
+      "label": "MiMo v2.6 Flash",
+      "lab": "Xiaomi",
+      "harness": "opencode",
+      "model": "opencode/mimo-v2.6-flash-free",
+      "open_weights": true,
+      "role": "main",
+      "verify": false,
+      "note": "OpenCode CLI (free tier has no key for Pi); secondary harness, see harness control"
+    },
+    {
+      "id": "nemotron-3-ultra",
+      "label": "Nemotron 3 Ultra",
+      "lab": "NVIDIA",
+      "harness": "pi",
+      "model": "nvidia/nvidia/nemotron-3-ultra-550b-a55b",
+      "open_weights": true,
+      "role": "main",
+      "verify": false,
+      "note": "NVIDIA build free endpoint (~40 requests/min, no daily cap)"
+    },
+    {
+      "id": "step-5-preview",
+      "label": "Step 5 Preview",
+      "lab": "StepFun",
+      "harness": "opencode",
+      "model": "opencode/step-5-preview-free",
+      "open_weights": false,
+      "role": "main",
+      "verify": false,
+      "note": "OpenCode CLI; secondary harness"
+    },
+    {
+      "id": "inkling",
+      "label": "Inkling",
+      "lab": "Thinking Machines",
+      "harness": "pi",
+      "model": "openrouter/thinkingmachines/inkling:free",
+      "open_weights": true,
+      "weights": "https://huggingface.co/thinkingmachines/Inkling",
+      "role": "main",
+      "note": "OpenRouter free tier (1,000 requests/day shared)"
+    },
+    {
+      "id": "gemma-4-31b",
+      "label": "Gemma 4 31B",
+      "lab": "Google",
+      "harness": "pi",
+      "model": "google/gemma-4-31b-it",
+      "open_weights": true,
+      "role": "main",
+      "note": "Google AI Studio free tier (Google's own endpoint); moved from OpenRouter free, see PROTOCOL §12"
+    },
+    {
+      "id": "nemotron-3-super",
+      "label": "Nemotron 3 Super 120B",
+      "lab": "NVIDIA",
+      "harness": "pi",
+      "model": "nvidia/nvidia/nemotron-3-super-120b-a12b",
+      "open_weights": true,
+      "role": "main",
+      "note": "NVIDIA build free endpoint (~40 requests/min, no daily cap)"
+    },
+    {
+      "id": "dots-3-note-preview",
+      "label": "dots.3 note preview",
+      "lab": "dots-studio",
+      "harness": "pi",
+      "model": "openrouter/dots-studio/dots-3-note-preview:free",
+      "open_weights": true,
+      "weights": "https://huggingface.co/dots-studio/dots3-note-prev",
+      "role": "main",
+      "note": "OpenRouter free tier (1,000 requests/day shared); phase1_tolerance 1: provider rejects base|Q4|6 every time, see PROTOCOL §12 deviation 5",
+      "phase1_tolerance": 1
+    },
+    {
+      "id": "laguna-s-2.1",
+      "label": "Laguna S 2.1",
+      "lab": "Poolside",
+      "harness": "pi",
+      "model": "openrouter/poolside/laguna-s-2.1:free",
+      "open_weights": true,
+      "weights": "https://huggingface.co/poolside/Laguna-S-2.1",
+      "role": "main",
+      "note": "OpenRouter free tier (1,000 requests/day shared)"
+    },
+    {
+      "id": "glm-5.3",
+      "label": "GLM-5.3",
+      "lab": "Z.ai",
+      "harness": "pi",
+      "model": "nvidia/z-ai/glm-5.3",
+      "open_weights": true,
+      "weights": "https://huggingface.co/zai-org/GLM-5.3",
+      "role": "main",
+      "note": "NVIDIA build free endpoint (~40 requests/min, no daily cap)"
+    },
+    {
+      "id": "kimi-k3",
+      "label": "Kimi K3",
+      "lab": "Moonshot AI",
+      "harness": "pi",
+      "model": "nvidia/moonshotai/kimi-k3",
+      "open_weights": true,
+      "weights": "https://huggingface.co/moonshotai/Kimi-K3",
+      "role": "main",
+      "note": "NVIDIA build free endpoint (~40 requests/min, no daily cap); slow queue (~2 min per call)"
+    },
+    {
+      "id": "muse-glimmer-30b",
+      "label": "Muse Glimmer 30B",
+      "lab": "Meta",
+      "harness": "pi",
+      "model": "nvidia/meta/muse-glimmer-30b",
+      "open_weights": true,
+      "weights": "https://huggingface.co/meta-models/Muse-Glimmer-30B",
+      "role": "main",
+      "note": "NVIDIA build free endpoint (~40 requests/min, no daily cap)"
+    },
+    {
+      "id": "deepseek-v4.1-flash",
+      "label": "DeepSeek V4.1 Flash",
+      "lab": "DeepSeek",
+      "harness": "pi",
+      "model": "nvidia/deepseek-ai/deepseek-v4.1-flash",
+      "open_weights": true,
+      "weights": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "role": "main",
+      "note": "Dropped 2026-10-13 at 205/930 (NVIDIA free endpoint timed out on most calls); not scored, see PROTOCOL §12 deviation 6"
+    },
+    {
+      "id": "gemini-flash",
+      "label": "Gemini 3.8 Flash",
+      "lab": "Google",
+      "harness": "pi",
+      "model": "google-vertex/gemini-3.8-flash",
+      "open_weights": false,
+      "role": "main",
+      "note": "Vertex AI (paid, global endpoint); first 18 samples via the AI Studio free tier, which allows 20 requests/day. See PROTOCOL §12"
+    },
+    {
+      "id": "gpt-oss-20b",
+      "label": "gpt-oss-20b",
+      "lab": "OpenAI",
+      "harness": "pi",
+      "model": "nvidia/openai/gpt-oss-20b",
+      "open_weights": true,
+      "role": "main",
+      "note": "NVIDIA build free endpoint; replaces gpt-oss-120b on Groq (no key, no free 120b endpoint), see PROTOCOL §12"
+    },
+    {
+      "id": "mistral-slot",
+      "label": "Mistral (dropped)",
+      "lab": "Mistral",
+      "harness": "pi",
+      "model": "mistral/FILL-IN",
+      "open_weights": false,
+      "role": "main",
+      "verify": true,
+      "note": "Dropped 2026-10-13: no free provider, never filled; see PROTOCOL §12 deviation 6"
+    },
+    {
+      "id": "gpt-6-luna@codex",
+      "label": "GPT-6 Luna via Codex CLI",
+      "lab": "OpenAI",
+      "harness": "codex",
+      "model": "gpt-6-luna",
+      "open_weights": false,
+      "role": "harness_control",
+      "control_of": "gpt-6-luna"
+    },
+    {
+      "id": "claude-haiku-5-5@retest",
+      "label": "Claude Haiku 5.5 (retest)",
+      "lab": "Anthropic",
+      "harness": "claude-cli",
+      "model": "claude-haiku-5-5",
+      "open_weights": false,
+      "role": "retest",
+      "control_of": "claude-haiku-5-5",
+      "seed": "pib-v1.0-retest"
+    },
+    {
+      "id": "nemotron-3-ultra@opencode",
+      "label": "Nemotron 3 Ultra via OpenCode CLI",
+      "lab": "NVIDIA",
+      "harness": "opencode",
+      "model": "opencode/nemotron-3-ultra-free",
+      "open_weights": true,
+      "role": "harness_control",
+      "control_of": "nemotron-3-ultra"
+    }
+  ],
+  "_checked": "Model ids checked on 2026-10-09 against the OpenRouter and NVIDIA model lists, and with a two-turn call through Pi (DeepSeek V4.1 Flash and Gemma 4 timed out that day). open_weights: null = to confirm from the model card before publication."
+}

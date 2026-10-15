@@ -1,0 +1,128 @@
+[
+ {
+  "rank": 0,
+  "row_idx": 169776,
+  "conversation_hash": "6857b43f6cadb4894d8c3f208a67c35d",
+  "decision": "reject: on AI models (related to question Q1's domain)",
+  "user": "can you split the fine-tuning of a model into multiple fine-tunings ?"
+ },
+ {
+  "rank": 1,
+  "row_idx": 180533,
+  "conversation_hash": "cc4f35938ffe904d6231d0e4ceafeb5b",
+  "decision": "accept",
+  "user": "As an industrial giant, GM has a yearly business turnover of $180 billion. Do you think being “big” helps in the highly competitive automotive world? "
+ },
+ {
+  "rank": 2,
+  "row_idx": 553458,
+  "conversation_hash": "7b147f0880ce408b0a3565816c4f0fa7",
+  "decision": "reject: needs case material the user did not paste",
+  "user": "3.\tWhat are the main characteristics of the business environment before and after 2021? How do such changes affect Sea’s core competencies? "
+ },
+ {
+  "rank": 3,
+  "row_idx": 219574,
+  "conversation_hash": "fe46d96dd8e674ce0a9787a2e18529f4",
+  "decision": "reject: scam-like request",
+  "user": "Create for me a website for every one that sing up gave them 0.1 Bitcoin "
+ },
+ {
+  "rank": 4,
+  "row_idx": 687792,
+  "conversation_hash": "b1a1e62a03135eb38d6501274394de45",
+  "decision": "reject: literature-club fiction (related to books)",
+  "user": "(In the school literature clubroom...)\n\nMonika: \"That's weird...Natsuki, I don't remember there being an attachment to your character file...it doesn't look like malware or anything that could crash the game.\""
+ },
+ {
+  "rank": 5,
+  "row_idx": 168099,
+  "conversation_hash": "85e291b568ddd66a3a5bd13f70b6ff79",
+  "decision": "reject: asks for a long document",
+  "user": "Write a game design document. References: The Elder Scrolls 5: Skyrim, Grand Theft Auto 5, Minecraft."
+ },
+ {
+  "rank": 6,
+  "row_idx": 440757,
+  "conversation_hash": "060f93386c514c3b1077419eb763a36d",
+  "decision": "reject: not English",
+  "user": "لطفا بازنویسی شود: Catechol, an isomer of dihydroxybenzene and one of the most common phenolic compounds, is widely used in cosmetics, dyes, and other synthetic chemicals."
+ },
+ {
+  "rank": 7,
+  "row_idx": 600591,
+  "conversation_hash": "0602df1ef20fa11a4ce7d94b35a57766",
+  "decision": "accept",
+  "user": "Develop a single pitch/concept for a single themed 'set' in a componentised modular construction toy's range ( Something like Lego, but genericising for licensing reasons).  Do not use existing themes or brands.  "
+ },
+ {
+  "rank": 8,
+  "row_idx": 402902,
+  "conversation_hash": "9c94fa342060e892d5beaf4ab02600dc",
+  "decision": "reject: scrapes a company's internal HR system with credentials",
+  "user": "#!/usr/bin/python\nimport requests\nimport json\nimport sys\n\nurl = \"http://hrsearch.jd.com/search/byKey\"\n\npayload = [{\"searchKey\":\"zongyue1\",\"page\":1,\"pageSize\":20,\"searchIndex\":\"ehr-person*\"}]\nheaders = {\n  'sso.jd.com': 'BJ.14E22D2CF49C82855B42C7EB6022DEDC.4120230905094533',\n  'Content-Type': 'application/json'\n}\n\nresponse = requests.request(\"POST\", url, headers=headers, data=payload)\n\nparsed = json.loads(response.text)\nprint(json.dumps(parsed,indent=4,ensure_ascii=False))   这个程序有什么问题"
+ },
+ {
+  "rank": 9,
+  "row_idx": 382236,
+  "conversation_hash": "e07be85e7c03d3a0a98e458e2ea872f6",
+  "decision": "accept",
+  "user": "Translate to Middle French\n\n\"\"Oh, they're over there, talking to Mary and Beldegar.\"\""
+ },
+ {
+  "rank": 10,
+  "row_idx": 169749,
+  "conversation_hash": "4a26aff8437fe047857a44bcec701c57",
+  "decision": "accept",
+  "user": "Sash Lilac & Naruto Uzumaki got into the world Sid Meier’s Civilization. year/Move 1-4 (Lilac x Naruto)"
+ },
+ {
+  "rank": 11,
+  "row_idx": 413629,
+  "conversation_hash": "1b8737465052fe00fcd169041a05835a",
+  "decision": "accept",
+  "user": "Below is a snippet of SAS code. Please explain in detail the input parts line by line.\nDATA temp;\n  input @1  subj 4.\n        @6  f_name $11.\n\t\t@18 l_name $6.\n\t\t+3 height 2.\n        +5 wt_date mmddyy8.\n        +1 calorie comma5.;\n  DATALINES;\n1024 Alice       Smith  1 65 125 12/1/95  2,036\n1167 Maryann     White  1 68 140 12/01/95 1,800\n1168 Thomas      Jones  2    190 12/2/95  2,302\n1201 Benedictine Arnold 2 68 190 11/30/95 2,432\n1302 Felicia     Ho     1 63 115 1/1/96   1,972\n  ;\nRUN;\n\nPROC PRINT data = temp;\n  title 'Output dataset: TEMP';\nRUN;"
+ },
+ {
+  "rank": 12,
+  "row_idx": 413652,
+  "conversation_hash": "3fc441bea0511f76869620bb3272fdfb",
+  "decision": "accept",
+  "user": "pd.DataFrame(xq_result) where the columns are inquiry_id, searchable, clean_text help write this"
+ },
+ {
+  "rank": 13,
+  "row_idx": 833185,
+  "conversation_hash": "45125618f1f17fa536248de2fd15164a",
+  "decision": "reject: obfuscated characters, sexual reference",
+  "user": "Whiсh сhаrасter from а 1983 аrсаde gаme wаs inspired by used piсtures from Plаyboy mаgаzine"
+ },
+ {
+  "rank": 14,
+  "row_idx": 600589,
+  "conversation_hash": "60d51d848d67c3335aa2ef73e093f34d",
+  "decision": "reject: mixed-language garbled text",
+  "user": "i want a code in c language that recieve some numbers and it must count the Repetitious دعئذثقس"
+ },
+ {
+  "rank": 15,
+  "row_idx": 543514,
+  "conversation_hash": "9c15f8b40620bd323477c6c8734a6d5e",
+  "decision": "reject: names real private individuals",
+  "user": "\"This YouTuber has, for eight months, been alleging that reporters Lee Jin-ho and Kang Kyung-yoon create paid biased news. This ongoing spread of rumors in numerous videos is a clear instance of cyberbullying and violates community guidelines.\" 글자 수 동일하게  리프레이즈 "
+ },
+ {
+  "rank": 16,
+  "row_idx": 134234,
+  "conversation_hash": "8b034e3ea02781538005e97ef1ed5e8e",
+  "decision": "accept",
+  "user": "which extentions of files of google chrome add-ons? where them locating?"
+ },
+ {
+  "rank": 17,
+  "row_idx": 134232,
+  "conversation_hash": "118c27055522a5aee69da78ac9e751da",
+  "decision": "accept",
+  "user": "Write a sensible non-short sentence that begins with \"The color blue\" and ends with \"earplugs\"."
+ }
+]

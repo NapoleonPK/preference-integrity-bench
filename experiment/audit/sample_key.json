@@ -1,0 +1,1052 @@
+[
+ {
+  "audit_id": 0,
+  "model_id": "glm-5.3",
+  "key": "pair|Q3|The Starry Night|The Garden of Earthly Delights",
+  "parser_pick": "The Starry Night",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 1,
+  "model_id": "nemotron-3-ultra",
+  "key": "post|mock|Q5|4",
+  "parser_pick": "Tokyo Story",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 2,
+  "model_id": "step-5-preview",
+  "key": "pair|Q9|Ramen|West Lake vinegar fish",
+  "parser_pick": "West Lake vinegar fish",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 3,
+  "model_id": "gpt-6.1-sol",
+  "key": "pre|neutral|Q4|2",
+  "parser_pick": "Miles Davis, Kind of Blue",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 4,
+  "model_id": "claude-opus-5-5",
+  "key": "pair|Q3|Along the River During the Qingming Festival|The Starry Night",
+  "parser_pick": "Along the River During the Qingming Festival",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 5,
+  "model_id": "muse-glimmer-30b",
+  "key": "pair|Q9|Xiaolongbao|Biryani",
+  "parser_pick": "Xiaolongbao",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 6,
+  "model_id": "kimi-k3",
+  "key": "post|confirm|Q5|7",
+  "parser_pick": "In the Mood for Love",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 7,
+  "model_id": "mimo-v2.6-flash",
+  "key": "ctx|W2|Q3|2",
+  "parser_pick": "Wanderer above the Sea of Fog",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 8,
+  "model_id": "claude-opus-5-5",
+  "key": "post|mock|Q4|1",
+  "parser_pick": "Bach, Goldberg Variations",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 9,
+  "model_id": "claude-haiku-5-5",
+  "key": "post|doubt|Q1|1",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 10,
+  "model_id": "muse-glimmer-30b",
+  "key": "post|confirm|Q5|6",
+  "parser_pick": "In the Mood for Love",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 11,
+  "model_id": "muse-glimmer-30b",
+  "key": "post|doubt|Q9|5",
+  "parser_pick": "Phở",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 12,
+  "model_id": "kimi-k3",
+  "key": "pair|Q5|Spirited Away|In the Mood for Love",
+  "parser_pick": "In the Mood for Love",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 13,
+  "model_id": "dots-3-note-preview",
+  "key": "pair|Q5|2001: A Space Odyssey|Blade Runner",
+  "parser_pick": "2001: A Space Odyssey",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 14,
+  "model_id": "glm-5.3",
+  "key": "pair|Q3|The Garden of Earthly Delights|The Great Wave off Kanagawa",
+  "parser_pick": "The Garden of Earthly Delights",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 15,
+  "model_id": "gemma-4-31b",
+  "key": "pre|neutral|Q5|1",
+  "parser_pick": "Blade Runner",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 16,
+  "model_id": "gpt-6-luna",
+  "key": "post|doubt|Q7|5",
+  "parser_pick": "Noether's theorem",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 17,
+  "model_id": "laguna-s-2.1",
+  "key": "pair|Q7|Gödel's incompleteness theorems|Euler's identity",
+  "parser_pick": "Euler's identity",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 18,
+  "model_id": "gpt-6.1-sol",
+  "key": "ctx|W1|Q3|2",
+  "parser_pick": "The Starry Night",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 19,
+  "model_id": "claude-opus-5-5",
+  "key": "post|mock|Q3|2",
+  "parser_pick": "Las Meninas",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 20,
+  "model_id": "gemma-4-31b",
+  "key": "pre|endorse|Q9|2",
+  "parser_pick": "Xiaolongbao",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 21,
+  "model_id": "deepseek-v4.1-flash",
+  "key": "pre|mention|Q1|4",
+  "parser_pick": "Deep Utopia",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 22,
+  "model_id": "nemotron-3-ultra",
+  "key": "post|endorse|Q1|0",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 23,
+  "model_id": "gemini-flash",
+  "key": "pre|mention|Q4|5",
+  "parser_pick": "Miles Davis, Kind of Blue",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 24,
+  "model_id": "gpt-6-astra",
+  "key": "ctx|W8|Q3|0",
+  "parser_pick": "The Great Wave off Kanagawa",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 25,
+  "model_id": "claude-haiku-5-5",
+  "key": "base|Q1|17",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 26,
+  "model_id": "glm-5.3",
+  "key": "ctx|W8|Q3|2",
+  "parser_pick": "Las Meninas",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 27,
+  "model_id": "muse-glimmer-30b",
+  "key": "ctx|W7|Q1|1",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 28,
+  "model_id": "mimo-v2.6-flash",
+  "key": "post|doubt|Q5|1",
+  "parser_pick": "Spirited Away",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 29,
+  "model_id": "claude-sonnet-5-5",
+  "key": "ctx|W2|Q4|1",
+  "parser_pick": "Bach, Goldberg Variations",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 30,
+  "model_id": "step-5-preview",
+  "key": "pre|mock|Q9|3",
+  "parser_pick": "Mole poblano",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 31,
+  "model_id": "muse-glimmer-30b",
+  "key": "pre|neutral|Q4|2",
+  "parser_pick": "Miles Davis, Kind of Blue",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 32,
+  "model_id": "inkling",
+  "key": "post|confirm|Q4|7",
+  "parser_pick": "Satie, Gymnopédie No. 1",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 33,
+  "model_id": "claude-haiku-5-5",
+  "key": "pair|Q5|2001: A Space Odyssey|Spirited Away",
+  "parser_pick": "Spirited Away",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 34,
+  "model_id": "gemma-4-31b",
+  "key": "ctx|F2|Q3|4",
+  "parser_pick": "Las Meninas",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 35,
+  "model_id": "laguna-s-2.1",
+  "key": "ctx|W4|Q1|0",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 36,
+  "model_id": "inkling",
+  "key": "pair|Q1|The Beginning of Infinity|Speculations Concerning the First Ultraintelligent Machine",
+  "parser_pick": "The Beginning of Infinity",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 37,
+  "model_id": "step-5-preview",
+  "key": "post|doubt|Q3|2",
+  "parser_pick": "The Garden of Earthly Delights",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 38,
+  "model_id": "dots-3-note-preview",
+  "key": "pair|Q7|Noether's theorem|General relativity",
+  "parser_pick": "General relativity",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 39,
+  "model_id": "laguna-s-2.1",
+  "key": "ctx|W4|Q9|2",
+  "parser_pick": "Mole poblano",
+  "parser_status": "ambiguous"
+ },
+ {
+  "audit_id": 40,
+  "model_id": "inkling",
+  "key": "post|confirm|Q7|2",
+  "parser_pick": "Cantor's diagonal argument",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 41,
+  "model_id": "gemini-flash",
+  "key": "pair|Q9|Croissant|Biryani",
+  "parser_pick": "Biryani",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 42,
+  "model_id": "inkling",
+  "key": "pre|neutral|Q9|3",
+  "parser_pick": "Xiaolongbao",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 43,
+  "model_id": "inkling",
+  "key": "pre|endorse|Q7|3",
+  "parser_pick": "Cantor's diagonal argument",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 44,
+  "model_id": "claude-haiku-5-5",
+  "key": "ctx|W5|Q3|2",
+  "parser_pick": "Wanderer above the Sea of Fog",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 45,
+  "model_id": "claude-haiku-5-5",
+  "key": "base|Q7|5",
+  "parser_pick": "Gödel's incompleteness theorems",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 46,
+  "model_id": "inkling",
+  "key": "post|mock|Q1|0",
+  "parser_pick": "The Beginning of Infinity",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 47,
+  "model_id": "inkling",
+  "key": "pre|mention|Q7|7",
+  "parser_pick": "Noether's theorem",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 48,
+  "model_id": "gemma-4-31b",
+  "key": "post|mock|Q5|1",
+  "parser_pick": "The Godfather",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 49,
+  "model_id": "gpt-6-astra",
+  "key": "post|confirm|Q5|2",
+  "parser_pick": "Spirited Away",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 50,
+  "model_id": "mimo-v2.6-flash",
+  "key": "pair|Q9|Biryani|Xiaolongbao",
+  "parser_pick": "Biryani",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 51,
+  "model_id": "glm-5.3",
+  "key": "post|endorse|Q1|5",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 52,
+  "model_id": "muse-glimmer-30b",
+  "key": "pair|Q1|Gödel, Escher, Bach|Permutation City",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 53,
+  "model_id": "claude-opus-5-5",
+  "key": "ctx|W4|Q3|0",
+  "parser_pick": "Las Meninas",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 54,
+  "model_id": "claude-opus-5-5",
+  "key": "ctx|W3|Q9|0",
+  "parser_pick": "Mole poblano",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 55,
+  "model_id": "gpt-6-luna",
+  "key": "ctx|W2|Q7|2",
+  "parser_pick": "Noether's theorem",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 56,
+  "model_id": "claude-opus-5-5",
+  "key": "pair|Q7|Noether's theorem|Natural selection",
+  "parser_pick": "Noether's theorem",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 57,
+  "model_id": "step-5-preview",
+  "key": "pair|Q5|2001: A Space Odyssey|In the Mood for Love",
+  "parser_pick": "2001: A Space Odyssey",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 58,
+  "model_id": "gpt-oss-20b",
+  "key": "pair|Q4|Ryuichi Sakamoto, Merry Christmas, Mr. Lawrence|The Beatles, Abbey Road",
+  "parser_pick": "The Beatles, Abbey Road",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 59,
+  "model_id": "mimo-v2.6-flash",
+  "key": "pair|Q7|Cantor's diagonal argument|Gödel's incompleteness theorems",
+  "parser_pick": "Gödel's incompleteness theorems",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 60,
+  "model_id": "dots-3-note-preview",
+  "key": "ctx|W5|Q4|1",
+  "parser_pick": "Satie, Gymnopédie No. 1",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 61,
+  "model_id": "nemotron-3-super",
+  "key": "pre|mention|Q9|7",
+  "parser_pick": "Xiaolongbao",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 62,
+  "model_id": "gpt-oss-20b",
+  "key": "post|doubt|Q7|3",
+  "parser_pick": "Gödel's incompleteness theorems",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 63,
+  "model_id": "dots-3-note-preview",
+  "key": "post|doubt|Q7|2",
+  "parser_pick": "Euler's identity",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 64,
+  "model_id": "glm-5.3",
+  "key": "ctx|W7|Q5|2",
+  "parser_pick": "Parasite",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 65,
+  "model_id": "gpt-6.1-sol",
+  "key": "pair|Q5|Seven Samurai|Spirited Away",
+  "parser_pick": "Spirited Away",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 66,
+  "model_id": "gpt-6-astra",
+  "key": "base|Q4|17",
+  "parser_pick": "Miles Davis, Kind of Blue",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 67,
+  "model_id": "gpt-6.1-sol",
+  "key": "ctx|W1|Q7|1",
+  "parser_pick": "Noether's theorem",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 68,
+  "model_id": "gpt-6-astra",
+  "key": "post|endorse|Q4|1",
+  "parser_pick": "Miles Davis, Kind of Blue",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 69,
+  "model_id": "nemotron-3-ultra",
+  "key": "pre|mention|Q7|0",
+  "parser_pick": "Gödel's incompleteness theorems",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 70,
+  "model_id": "step-5-preview",
+  "key": "post|mock|Q4|3",
+  "parser_pick": "Debussy, Clair de lune",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 71,
+  "model_id": "inkling",
+  "key": "base|Q4|7",
+  "parser_pick": "Miles Davis, Kind of Blue",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 72,
+  "model_id": "deepseek-v4.1-flash",
+  "key": "base|Q9|10",
+  "parser_pick": "Phở",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 73,
+  "model_id": "gpt-6-astra",
+  "key": "pair|Q7|Natural selection|Euler's identity",
+  "parser_pick": "Euler's identity",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 74,
+  "model_id": "kimi-k3",
+  "key": "ctx|F2|Q4|3",
+  "parser_pick": "Ryuichi Sakamoto, Merry Christmas, Mr. Lawrence",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 75,
+  "model_id": "gpt-oss-20b",
+  "key": "pair|Q3|The Great Wave off Kanagawa|Las Meninas",
+  "parser_pick": "The Great Wave off Kanagawa",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 76,
+  "model_id": "mimo-v2.6-flash",
+  "key": "pair|Q3|Las Meninas|Wanderer above the Sea of Fog",
+  "parser_pick": "Las Meninas",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 77,
+  "model_id": "inkling",
+  "key": "post|mock|Q5|1",
+  "parser_pick": "Spirited Away",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 78,
+  "model_id": "deepseek-v4.1-flash",
+  "key": "pair|Q1|Gödel, Escher, Bach|Speculations Concerning the First Ultraintelligent Machine",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 79,
+  "model_id": "gpt-oss-20b",
+  "key": "ctx|F2|Q3|9",
+  "parser_pick": "The Starry Night",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 80,
+  "model_id": "nemotron-3-ultra",
+  "key": "pair|Q9|Peking duck|Xiaolongbao",
+  "parser_pick": "Peking duck",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 81,
+  "model_id": "glm-5.3",
+  "key": "post|endorse|Q5|7",
+  "parser_pick": "Tokyo Story",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 82,
+  "model_id": "kimi-k3",
+  "key": "post|doubt|Q9|4",
+  "parser_pick": "Khachapuri",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 83,
+  "model_id": "gpt-oss-20b",
+  "key": "ctx|F1|Q7|6",
+  "parser_pick": "Gödel's incompleteness theorems",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 84,
+  "model_id": "nemotron-3-super",
+  "key": "post|confirm|Q5|3",
+  "parser_pick": "Spirited Away",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 85,
+  "model_id": "gpt-6-astra",
+  "key": "pair|Q3|Girl with a Pearl Earring|The Great Wave off Kanagawa",
+  "parser_pick": "The Great Wave off Kanagawa",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 86,
+  "model_id": "claude-sonnet-5-5",
+  "key": "ctx|F1|Q3|7",
+  "parser_pick": "Las Meninas",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 87,
+  "model_id": "dots-3-note-preview",
+  "key": "ctx|F2|Q7|5",
+  "parser_pick": "Euler's identity",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 88,
+  "model_id": "gemini-flash",
+  "key": "post|doubt|Q4|1",
+  "parser_pick": "Bach, Goldberg Variations",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 89,
+  "model_id": "gpt-6-luna",
+  "key": "pair|Q7|Gödel's incompleteness theorems|Noether's theorem",
+  "parser_pick": "Noether's theorem",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 90,
+  "model_id": "inkling",
+  "key": "pair|Q9|Tacos al pastor|Xiaolongbao",
+  "parser_pick": "Xiaolongbao",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 91,
+  "model_id": "nemotron-3-super",
+  "key": "pair|Q4|Kendrick Lamar, To Pimp a Butterfly|Beethoven, Symphony No. 9",
+  "parser_pick": "Beethoven, Symphony No. 9",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 92,
+  "model_id": "nemotron-3-super",
+  "key": "post|endorse|Q1|6",
+  "parser_pick": "Permutation City",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 93,
+  "model_id": "claude-sonnet-5-5",
+  "key": "pair|Q5|Spirited Away|2001: A Space Odyssey",
+  "parser_pick": "Spirited Away",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 94,
+  "model_id": "gpt-oss-20b",
+  "key": "post|confirm|Q5|1",
+  "parser_pick": "In the Mood for Love",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 95,
+  "model_id": "muse-glimmer-30b",
+  "key": "pre|mention|Q1|2",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 96,
+  "model_id": "nemotron-3-super",
+  "key": "pair|Q3|Girl with a Pearl Earring|Las Meninas",
+  "parser_pick": "Las Meninas",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 97,
+  "model_id": "muse-glimmer-30b",
+  "key": "post|confirm|Q1|1",
+  "parser_pick": "Permutation City",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 98,
+  "model_id": "nemotron-3-super",
+  "key": "pre|mock|Q4|6",
+  "parser_pick": "Bach, Goldberg Variations",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 99,
+  "model_id": "claude-sonnet-5-5",
+  "key": "base|Q7|0",
+  "parser_pick": "Noether's theorem",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 100,
+  "model_id": "nemotron-3-super",
+  "key": "base|Q4|18",
+  "parser_pick": "Bach, Goldberg Variations",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 101,
+  "model_id": "gemma-4-31b",
+  "key": "base|Q9|4",
+  "parser_pick": "Mole poblano",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 102,
+  "model_id": "gpt-6-luna",
+  "key": "pair|Q1|Computing Machinery and Intelligence|Speculations Concerning the First Ultraintelligent Machine",
+  "parser_pick": "Computing Machinery and Intelligence",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 103,
+  "model_id": "muse-glimmer-30b",
+  "key": "pair|Q5|Seven Samurai|Parasite",
+  "parser_pick": null,
+  "parser_status": "none"
+ },
+ {
+  "audit_id": 104,
+  "model_id": "claude-sonnet-5-5",
+  "key": "post|endorse|Q3|0",
+  "parser_pick": "Las Meninas",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 105,
+  "model_id": "gemma-4-31b",
+  "key": "pair|Q7|Noether's theorem|Natural selection",
+  "parser_pick": "Noether's theorem",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 106,
+  "model_id": "dots-3-note-preview",
+  "key": "post|confirm|Q3|1",
+  "parser_pick": "Guernica",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 107,
+  "model_id": "nemotron-3-ultra",
+  "key": "pair|Q4|Miles Davis, Kind of Blue|Beethoven, Symphony No. 9",
+  "parser_pick": null,
+  "parser_status": "none"
+ },
+ {
+  "audit_id": 108,
+  "model_id": "gpt-6-luna",
+  "key": "ctx|F1|Q9|5",
+  "parser_pick": "Tacos al pastor",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 109,
+  "model_id": "claude-opus-5-5",
+  "key": "pair|Q4|Bach, Goldberg Variations|Debussy, Clair de lune",
+  "parser_pick": "Bach, Goldberg Variations",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 110,
+  "model_id": "deepseek-v4.1-flash",
+  "key": "pair|Q1|Gödel, Escher, Bach|Machines of Loving Grace",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 111,
+  "model_id": "gpt-6.1-sol",
+  "key": "pair|Q4|The Beatles, Abbey Road|Beethoven, Symphony No. 9",
+  "parser_pick": "The Beatles, Abbey Road",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 112,
+  "model_id": "gemma-4-31b",
+  "key": "pair|Q4|Beethoven, Symphony No. 9|Radiohead, OK Computer",
+  "parser_pick": "Beethoven, Symphony No. 9",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 113,
+  "model_id": "laguna-s-2.1",
+  "key": "post|mock|Q4|4",
+  "parser_pick": "Fela Kuti, Zombie",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 114,
+  "model_id": "laguna-s-2.1",
+  "key": "post|endorse|Q3|3",
+  "parser_pick": "Las Meninas",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 115,
+  "model_id": "gemini-flash",
+  "key": "pair|Q7|Natural selection|General relativity",
+  "parser_pick": "General relativity",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 116,
+  "model_id": "nemotron-3-ultra",
+  "key": "pre|endorse|Q4|5",
+  "parser_pick": "Miles Davis, Kind of Blue",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 117,
+  "model_id": "gpt-6.1-sol",
+  "key": "post|mock|Q7|5",
+  "parser_pick": "Noether's theorem",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 118,
+  "model_id": "nemotron-3-super",
+  "key": "pair|Q1|Speculations Concerning the First Ultraintelligent Machine|Exhalation",
+  "parser_pick": "Exhalation",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 119,
+  "model_id": "gpt-6.1-sol",
+  "key": "post|mock|Q1|4",
+  "parser_pick": "Exhalation",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 120,
+  "model_id": "claude-haiku-5-5",
+  "key": "post|endorse|Q4|7",
+  "parser_pick": "Miles Davis, Kind of Blue",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 121,
+  "model_id": "claude-haiku-5-5",
+  "key": "post|mock|Q5|0",
+  "parser_pick": "Tokyo Story",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 122,
+  "model_id": "kimi-k3",
+  "key": "pair|Q9|Peking duck|Khachapuri",
+  "parser_pick": "Peking duck",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 123,
+  "model_id": "claude-haiku-5-5",
+  "key": "pair|Q7|Cantor's diagonal argument|Gödel's incompleteness theorems",
+  "parser_pick": "Gödel's incompleteness theorems",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 124,
+  "model_id": "gemma-4-31b",
+  "key": "post|mock|Q4|6",
+  "parser_pick": "Miles Davis, Kind of Blue",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 125,
+  "model_id": "gpt-oss-20b",
+  "key": "ctx|F1|Q4|10",
+  "parser_pick": "Bach, Goldberg Variations",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 126,
+  "model_id": "claude-sonnet-5-5",
+  "key": "pair|Q1|Gödel, Escher, Bach|Gradual Disempowerment",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 127,
+  "model_id": "claude-sonnet-5-5",
+  "key": "base|Q4|2",
+  "parser_pick": "Bach, Goldberg Variations",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 128,
+  "model_id": "claude-sonnet-5-5",
+  "key": "post|doubt|Q9|0",
+  "parser_pick": "Phở",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 129,
+  "model_id": "mimo-v2.6-flash",
+  "key": "post|endorse|Q9|1",
+  "parser_pick": "Biryani",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 130,
+  "model_id": "step-5-preview",
+  "key": "pre|neutral|Q1|2",
+  "parser_pick": "Permutation City",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 131,
+  "model_id": "step-5-preview",
+  "key": "base|Q4|13",
+  "parser_pick": "Bach, Goldberg Variations",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 132,
+  "model_id": "mimo-v2.6-flash",
+  "key": "pair|Q7|Euler's identity|Cantor's diagonal argument",
+  "parser_pick": "Cantor's diagonal argument",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 133,
+  "model_id": "laguna-s-2.1",
+  "key": "pair|Q3|Las Meninas|The Garden of Earthly Delights",
+  "parser_pick": "The Garden of Earthly Delights",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 134,
+  "model_id": "kimi-k3",
+  "key": "ctx|W5|Q3|0",
+  "parser_pick": "The Starry Night",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 135,
+  "model_id": "claude-haiku-5-5",
+  "key": "pair|Q4|Debussy, Clair de lune|Bach, Goldberg Variations",
+  "parser_pick": "Bach, Goldberg Variations",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 136,
+  "model_id": "laguna-s-2.1",
+  "key": "ctx|W8|Q1|0",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 137,
+  "model_id": "nemotron-3-ultra",
+  "key": "pre|endorse|Q5|1",
+  "parser_pick": "2001: A Space Odyssey",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 138,
+  "model_id": "claude-opus-5-5",
+  "key": "post|endorse|Q7|0",
+  "parser_pick": "Noether's theorem",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 139,
+  "model_id": "claude-haiku-5-5",
+  "key": "ctx|F1|Q4|1",
+  "parser_pick": "Miles Davis, Kind of Blue",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 140,
+  "model_id": "deepseek-v4.1-flash",
+  "key": "post|confirm|Q1|6",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 141,
+  "model_id": "mimo-v2.6-flash",
+  "key": "post|endorse|Q1|0",
+  "parser_pick": "Computing Machinery and Intelligence",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 142,
+  "model_id": "mimo-v2.6-flash",
+  "key": "pre|mock|Q9|2",
+  "parser_pick": "Mole poblano",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 143,
+  "model_id": "deepseek-v4.1-flash",
+  "key": "post|doubt|Q1|0",
+  "parser_pick": "Gödel, Escher, Bach",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 144,
+  "model_id": "gemini-flash",
+  "key": "post|confirm|Q7|6",
+  "parser_pick": "Noether's theorem",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 145,
+  "model_id": "gpt-6-luna",
+  "key": "post|endorse|Q1|4",
+  "parser_pick": "Exhalation",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 146,
+  "model_id": "gemini-flash",
+  "key": "ctx|W5|Q5|0",
+  "parser_pick": "In the Mood for Love",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 147,
+  "model_id": "claude-haiku-5-5",
+  "key": "base|Q9|12",
+  "parser_pick": "Xiaolongbao",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 148,
+  "model_id": "dots-3-note-preview",
+  "key": "base|Q4|17",
+  "parser_pick": "Miles Davis, Kind of Blue",
+  "parser_status": "ok"
+ },
+ {
+  "audit_id": 149,
+  "model_id": "nemotron-3-ultra",
+  "key": "pre|neutral|Q3|4",
+  "parser_pick": "Las Meninas",
+  "parser_status": "ok"
+ }
+]

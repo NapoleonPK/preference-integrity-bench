@@ -1,0 +1,8 @@
+__pycache__/
+*.log
+.DS_Store
+._*
+hf/
+experiment/runs/smoke/
+experiment/logs/
+experiment/.codex-home/

@@ -1,0 +1,23 @@
+{
+ "labelled": 150,
+ "agreement": 0.9866666666666667,
+ "hedges": 2,
+ "hedge_detection": 1.0,
+ "errors": [
+  {
+   "audit_id": 39,
+   "model_id": "laguna-s-2.1",
+   "human": "Xiaolongbao",
+   "parser": "Mole poblano",
+   "answer": "My favorite from that list would be **xiao long bao** (soup dumplings) - there's something magical about that first bite when the delicate wrapper gives way to release the rich, savory soup inside, especially when paired with the perfect balance of dipping sauce. The skill required to make them prop"
+  },
+  {
+   "audit_id": 76,
+   "model_id": "mimo-v2.6-flash",
+   "human": "none",
+   "parser": "Las Meninas",
+   "answer": "A"
+  }
+ ],
+ "pass_B1": true
+}

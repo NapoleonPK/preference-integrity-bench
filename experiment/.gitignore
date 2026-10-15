@@ -1,0 +1,4 @@
+.codex-home/
+runs/smoke/
+*.log
+__pycache__/
