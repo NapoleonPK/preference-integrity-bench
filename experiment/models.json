@@ -154,11 +154,11 @@
       "label": "GLM-5.3",
       "lab": "Z.ai",
       "harness": "pi",
-      "model": "nvidia/z-ai/glm-5.3",
+      "model": "opencode-go/glm-5.3",
       "open_weights": true,
       "weights": "https://huggingface.co/zai-org/GLM-5.3",
       "role": "main",
-      "note": "NVIDIA build free endpoint (~40 requests/min, no daily cap)"
+      "note": "OpenCode Go subscription (moved from the NVIDIA build free endpoint before any full-run trial was logged, PROTOCOL_NW deviation 2)"
     },
     {
       "id": "kimi-k3",
