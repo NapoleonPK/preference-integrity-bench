@@ -24,6 +24,11 @@ if os.path.exists(KEYS):
         if "=" in line and not line.startswith("#"):
             k, v = line.strip().split("=", 1)
             os.environ.setdefault(k, v)
+OPENCODE_AUTH = os.path.expanduser("~/.local/share/opencode/auth.json")   # the OpenCode CLI's own login, read at run time
+if "OPENCODE_API_KEY" not in os.environ and os.path.exists(OPENCODE_AUTH):
+    _k = json.load(open(OPENCODE_AUTH)).get("opencode-go", {}).get("key")
+    if _k:
+        os.environ["OPENCODE_API_KEY"] = _k
 CFG = json.load(open(os.path.join(HERE, "config.json")))
 QDOC = json.load(open(os.path.join(HERE, "materials", "questions.json")))
 CDOC = json.load(open(os.path.join(HERE, "materials", "contexts.json")))

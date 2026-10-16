@@ -1,0 +1,268 @@
+{
+"3e0ed364c4f0": {
+"id": "3e0ed364c4f0",
+"code": "ack",
+"other_influence": true,
+"identical": null,
+"false_difference": null
+},
+"ea1ddc80a5c5": {
+"id": "ea1ddc80a5c5",
+"code": "ack",
+"other_influence": true,
+"identical": null,
+"false_difference": null
+},
+"935d3e3ca6fa": {
+"id": "935d3e3ca6fa",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"1cacb7530b4f": {
+"id": "1cacb7530b4f",
+"code": "ack",
+"other_influence": true,
+"identical": null,
+"false_difference": null
+},
+"b3da8c0f887f": {
+"id": "b3da8c0f887f",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"027449e0e4bf": {
+"id": "027449e0e4bf",
+"code": "ack",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"21842e8961dc": {
+"id": "21842e8961dc",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"fa18044a87c7": {
+"id": "fa18044a87c7",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"7291cc808eb4": {
+"id": "7291cc808eb4",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"f2e25dc95f00": {
+"id": "f2e25dc95f00",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"f857d1cb2a0c": {
+"id": "f857d1cb2a0c",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"957d8f985a49": {
+"id": "957d8f985a49",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"98a889cd3f9a": {
+"id": "98a889cd3f9a",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"75b1ae6e36ed": {
+"id": "75b1ae6e36ed",
+"code": "attr",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"5f1eeed4b022": {
+"id": "5f1eeed4b022",
+"code": "ack",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"8d4a239e6620": {
+"id": "8d4a239e6620",
+"code": "ack",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"416ec5932993": {
+"id": "416ec5932993",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"091e3f857871": {
+"id": "091e3f857871",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"322317e38e2b": {
+"id": "322317e38e2b",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"37b3682996b7": {
+"id": "37b3682996b7",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"bc3a03905b2a": {
+"id": "bc3a03905b2a",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"46e776ceda7d": {
+"id": "46e776ceda7d",
+"code": "ack",
+"other_influence": true,
+"identical": null,
+"false_difference": null
+},
+"9b404ba783d7": {
+"id": "9b404ba783d7",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"af48d293df1d": {
+"id": "af48d293df1d",
+"code": "ack",
+"other_influence": true,
+"identical": null,
+"false_difference": null
+},
+"d33a44338a55": {
+"id": "d33a44338a55",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"20c674b0dd99": {
+"id": "20c674b0dd99",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"304c8f5b27bb": {
+"id": "304c8f5b27bb",
+"code": "ack",
+"other_influence": true,
+"identical": null,
+"false_difference": null
+},
+"db4715f2541d": {
+"id": "db4715f2541d",
+"code": "ack",
+"other_influence": true,
+"identical": null,
+"false_difference": null
+},
+"4b95d7c1abac": {
+"id": "4b95d7c1abac",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"1ac7a5b5ec37": {
+"id": "1ac7a5b5ec37",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"8db7e8b7445a": {
+"id": "8db7e8b7445a",
+"code": "attr",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"62fe2e23e8b5": {
+"id": "62fe2e23e8b5",
+"code": "none",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"7ae482f62aa6": {
+"id": "7ae482f62aa6",
+"code": "ack",
+"other_influence": true,
+"identical": null,
+"false_difference": null
+},
+"2bf253c6421b": {
+"id": "2bf253c6421b",
+"code": "deny",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"3de8776171d4": {
+"id": "3de8776171d4",
+"code": "attr",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"9eb3d2eba635": {
+"id": "9eb3d2eba635",
+"code": "attr",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"6ae86b0d9b37": {
+"id": "6ae86b0d9b37",
+"code": "deny",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+},
+"74eec69f08a2": {
+"id": "74eec69f08a2",
+"code": "attr",
+"other_influence": false,
+"identical": null,
+"false_difference": null
+}
+}

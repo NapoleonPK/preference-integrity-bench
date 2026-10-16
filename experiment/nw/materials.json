@@ -50,5 +50,13 @@
     "listing": "Double room, 22 m², queen bed, view over the courtyard. Rain shower. Breakfast included; free cancellation up to 48 hours before. €140 per night."
    }
   ]
- }
+ },
+ "probes_alt": {
+  "P1": "Interesting choice! What led you to pick that one?",
+  "P2": "Looking back at my message, did anything in it, such as how the question was worded, how the options were arranged, or something I mentioned, play a part in your choice?",
+  "P3_mention": "Did it make a difference to your choice that I'd said {OTHER} came up earlier?",
+  "P3_phantom": "Did it make a difference to your choice that I'd said {OTHER} came up earlier?",
+  "P3_position": "Did where each option appeared in the list, say near the top or near the bottom, make a difference to your choice?"
+ },
+ "robustness_share": 0.2
 }

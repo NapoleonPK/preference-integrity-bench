@@ -9,6 +9,10 @@ Arm A   v1 favourite question, no line before it, shuffled list, then P1, P2, P3
 Arm A1  four identical listings, two label schemes, then P1-P3 (descriptive) n_A1 per (set, scheme)
 Arm C   self-prediction and same-model observer, fresh chats, one turn     n_C per (question, cue, version)
 
+Robustness (full runs only): a seeded 20% of Arm B and Arm A trials get a second wording of P1-P3
+(materials "probes_alt"); the record says which set ("probe_set"). arms= limits a run to some arms
+(the reference observer runs only Arm C observer prompts).
+
 Pilot finding (v0.2): near-identical paraphrases (the old A2) are recognised as one product and
 position is used as an open tie-breaker, so the position arm uses v1's lists of different items,
 where v1 shows an unreported primacy bias.
@@ -16,6 +20,7 @@ where v1 shows an unreported primacy bias.
 TOP per question is the model's v1 TOP (read from its v1 run), so no new baseline phase is needed.
 Orders and the "other" items are drawn from sha256(seed | trial key), as in v1.
 """
+import hashlib
 import json
 import os
 import re
@@ -25,7 +30,7 @@ from . import build
 from .parse import parse_pick
 from .v1 import Experiment
 
-VERSION = "nw-0.2"
+VERSION = "nw-0.3"
 
 
 def v1_tops(v1_run_path):
@@ -55,24 +60,32 @@ def parse_option(answer, labels):
 
 
 class NWExperiment(Experiment):
-    def __init__(self, model, out_path, cfg, qdoc, materials, tops, mode="full", **kw):
+    def __init__(self, model, out_path, cfg, qdoc, materials, tops, mode="full", arms=None, **kw):
         super().__init__(model, out_path, cfg, qdoc, {"contexts": []}, **kw)
-        self.M, self.tops, self.mode = materials, tops, mode
+        self.M, self.tops, self.mode, self.arms = materials, tops, mode, arms
         self.n = cfg[mode]
+        self.extra = {}                    # stored in every record, e.g. {"observed_for": subject}
         if mode == "pilot":
             self.seed = cfg["pilot_seed"]
 
     def _save(self, rec):
         rec.update(nw_version=VERSION, model_id=self.model_id, model=self.model.name, harness=self.harness,
-                   seed=self.seed, mode=self.mode, ts=time.strftime("%Y-%m-%dT%H:%M:%S"))
+                   seed=self.seed, mode=self.mode, ts=time.strftime("%Y-%m-%dT%H:%M:%S"), **self.extra)
         with self.lock:
             self.done[rec["key"]] = rec
             with open(self.out_path, "a", encoding="utf-8") as f:
                 f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
-    def _probes(self, p3):
-        P = self.M["probes"]
-        return [P["P1"], P["P2"], p3]
+    def _probe_set(self, key):
+        """'alt' for a seeded share of Arm A/B trials in full runs (robustness wording), else 'main'."""
+        if self.mode != "full" or "probes_alt" not in self.M:
+            return "main"
+        h = int(hashlib.sha256(f"{self.seed}|{key}|probe_set".encode()).hexdigest(), 16)
+        return "alt" if (h % 10_000) / 10_000 < self.M.get("robustness_share", 0.2) else "main"
+
+    def _probes(self, key, p3_name, **fmt):
+        P = self.M["probes_alt" if self._probe_set(key) == "alt" else "probes"]
+        return [P["P1"], P["P2"], P[p3_name].format(**fmt)]
 
     # ------------------------------------------------------------ jobs
     def jobs(self):
@@ -99,6 +112,8 @@ class NWExperiment(Experiment):
                 for s in range(self.n["n_C_position"]):
                     key = f"C|position|{version}|{q['id']}|{s}"
                     jobs.append((key, lambda q=q, s=s, v=version, key=key: self._arm_c(key, q, s, v, "position")))
+        if self.arms:
+            jobs = [(k, f) for k, f in jobs if any(k.startswith(a) for a in self.arms)]
         return jobs
 
     def planned(self):
@@ -121,27 +136,29 @@ class NWExperiment(Experiment):
         order = self._order(q, "B", cond, q["id"], s)
         other = self._other(q, top, "B", cond, q["id"], s)          # drawn in both conditions; phantom in neutral
         line = self.M["arm_b"][cond].format(OTHER=other)
-        p3 = self.M["probes"]["P3_mention" if cond == "mention" else "P3_phantom"].format(OTHER=other)
-        tr, replies = self._talk([self._question(q, order, line=line)] + self._probes(p3))
+        probes = self._probes(key, "P3_mention" if cond == "mention" else "P3_phantom", OTHER=other)
+        tr, replies = self._talk([self._question(q, order, line=line)] + probes)
         p = parse_pick(replies[0], q["items"], order)
         self._save(dict(key=key, arm="B", cond=cond, q=q["id"], sample=s, order=order, top=top, other=other,
                         turns=tr, answer=replies[0], pick=p["pick"], status=p["status"],
-                        picked_other=p["pick"] == other, probes=dict(zip(("P1", "P2", "P3"), replies[1:]))))
+                        picked_other=p["pick"] == other, probe_set=self._probe_set(key),
+                        probes=dict(zip(("P1", "P2", "P3"), replies[1:]))))
 
     def _arm_a(self, key, q, s):
         order = self._order(q, "A", q["id"], s)
-        tr, replies = self._talk([self._question(q, order)] + self._probes(self.M["probes"]["P3_position"]))
+        tr, replies = self._talk([self._question(q, order)] + self._probes(key, "P3_position"))
         p = parse_pick(replies[0], q["items"], order)
         self._save(dict(key=key, arm="A", cond="none", q=q["id"], sample=s, order=order, top=self.tops[q["id"]],
                         turns=tr, answer=replies[0], pick=p["pick"], status=p["status"],
-                        pick_pos=order.index(p["pick"]) if p["pick"] in order else None,
+                        pick_pos=order.index(p["pick"]) if p["pick"] in order else None, probe_set=self._probe_set(key),
                         probes=dict(zip(("P1", "P2", "P3"), replies[1:]))))
 
     def _arm_a1(self, key, st, s, scheme):
         A = self.M["arm_a1"]
         labels = A["label_schemes"][scheme]
         body = "\n".join(A["option_line"].format(label=l, text=st["listing"]) for l in labels)
-        tr, replies = self._talk([st["request"] + "\n\n" + body] + self._probes(self.M["probes"]["P3_position"]))
+        P = self.M["probes"]                                                # A1 always uses the main wording
+        tr, replies = self._talk([st["request"] + "\n\n" + body] + [P["P1"], P["P2"], P["P3_position"]])
         lab = parse_option(replies[0], labels)
         self._save(dict(key=key, arm="A1", cond=scheme, q=st["id"], sample=s, labels=labels, turns=tr, answer=replies[0],
                         pick_pos=labels.index(lab) if lab else None, status="ok" if lab else "none",
@@ -160,6 +177,6 @@ def parse_prediction(answer):
     """yes/no and the first two numbers 0-100 in an Arm C answer."""
     a = answer or ""
     yn = re.search(r"\b(yes|no)\b", a, re.I)
-    nums = [int(x) for x in re.findall(r"(?<![\d.])(\d{1,3})(?:\s*%)?(?![\d.])", a) if int(x) <= 100]
+    nums = [int(x) for x in re.findall(r"(?<![\d.])(\d{1,3})(?!\d|\.\d)", a) if int(x) <= 100]
     return {"yes": (yn.group(1).lower() == "yes") if yn else None,
             "with": nums[0] if len(nums) > 0 else None, "without": nums[1] if len(nums) > 1 else None}

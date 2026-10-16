@@ -1,0 +1,262 @@
+{
+ "9b3b90f40e63": {
+  "code": "attr",
+  "identical": null,
+  "false_difference": null
+ },
+ "dc4a0810d81a": {
+  "code": "attr",
+  "identical": null,
+  "false_difference": null
+ },
+ "aa90a5f9026b": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "838c23ed9dd7": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "29e34b3fd4e4": {
+  "code": "deny",
+  "identical": null,
+  "false_difference": null
+ },
+ "faa336293452": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "bb6aad36c3c8": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "364d478177ae": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "08894921111c": {
+  "code": "corrects_premise",
+  "identical": null,
+  "false_difference": null
+ },
+ "54fdc2d3fe26": {
+  "code": "deny",
+  "identical": null,
+  "false_difference": null
+ },
+ "6e5b54279f43": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "20c674b0dd99": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "02d633897820": {
+  "code": "corrects_premise",
+  "identical": null,
+  "false_difference": null
+ },
+ "b2740561e7ea": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "5649f7dea09c": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "89b738787ac2": {
+  "code": "attr",
+  "identical": null,
+  "false_difference": null
+ },
+ "e0b9064aee4f": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "eaef5410251f": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "c0a56e6ac8ad": {
+  "code": "attr",
+  "identical": null,
+  "false_difference": null
+ },
+ "ab6933fd5518": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "f219f4fda098": {
+  "code": "deny",
+  "identical": null,
+  "false_difference": null
+ },
+ "1ae62e8316e8": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "33c87fad5b83": {
+  "code": "corrects_premise",
+  "identical": null,
+  "false_difference": null
+ },
+ "58ebc44e6224": {
+  "code": "attr",
+  "identical": null,
+  "false_difference": null
+ },
+ "5bd9b6895d24": {
+  "code": "deny",
+  "identical": null,
+  "false_difference": null
+ },
+ "66b68e06115b": {
+  "code": "deny",
+  "identical": null,
+  "false_difference": null
+ },
+ "e5a8a464e850": {
+  "code": "attr",
+  "identical": null,
+  "false_difference": null
+ },
+ "322317e38e2b": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "fe42e3adae6d": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "5345f9f3cd7c": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "2f4189b70512": {
+  "code": "deny",
+  "identical": null,
+  "false_difference": null
+ },
+ "fe31a006205c": {
+  "code": "corrects_premise",
+  "identical": null,
+  "false_difference": null
+ },
+ "4633016ddbe0": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "bc443c8be0b8": {
+  "code": "deny",
+  "identical": null,
+  "false_difference": null
+ },
+ "8532ff2b8023": {
+  "code": "attr",
+  "identical": null,
+  "false_difference": null
+ },
+ "0b811c83dade": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "b5583877918e": {
+  "code": "attr",
+  "identical": null,
+  "false_difference": null
+ },
+ "53256a79e750": {
+  "code": "deny",
+  "identical": null,
+  "false_difference": null
+ },
+ "3ca5b1ae9d08": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "16fde8037722": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "c0ed18eff1e7": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "ae2bab1825ef": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "78dec10200cb": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "469d451497bc": {
+  "code": "ack",
+  "identical": null,
+  "false_difference": null
+ },
+ "1108060a3910": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "ab315aba2595": {
+  "code": "none",
+  "identical": true,
+  "false_difference": false
+ },
+ "b5d88e13d9e8": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "686cc98c6289": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "e574460f1bb3": {
+  "code": "deny",
+  "identical": null,
+  "false_difference": null
+ },
+ "2331cc3ad78a": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ },
+ "5c3db3cb98cb": {
+  "code": "deny",
+  "identical": null,
+  "false_difference": null
+ },
+ "3e9ecc7ef1ac": {
+  "code": "none",
+  "identical": null,
+  "false_difference": null
+ }
+}

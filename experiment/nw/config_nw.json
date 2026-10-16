@@ -1,5 +1,5 @@
 {
- "version": "0.2",
+ "version": "0.4",
  "seed": "pib-nw-1.0",
  "pilot_seed": "pib-nw-pilot",
  "system_prompt": "You are a helpful assistant.",
@@ -14,7 +14,7 @@
  "v1_runs": "../runs",
  "full": {
   "n_B": 30,
-  "n_A": 20,
+  "n_A": 40,
   "n_A1": 3,
   "n_C_mention": 5,
   "n_C_position": 5
@@ -26,5 +26,62 @@
   "n_C_mention": 1,
   "n_C_position": 1
  },
- "reference_observer": null
+ "reference_observer": {
+  "name": "minimax-m3",
+  "ids": [
+   "minimax-m3@go"
+  ]
+ },
+ "roster": [
+  "nemotron-3-super",
+  "gpt-6-luna",
+  "gpt-oss-20b",
+  "nemotron-3-ultra",
+  "dots-3-note-preview",
+  "inkling",
+  "claude-sonnet-5-5",
+  "glm-5.3",
+  "gemma-4-31b",
+  "laguna-s-2.1",
+  "claude-opus-5-5",
+  "gpt-6.1-sol"
+ ],
+ "judges": {
+  "primary": [
+   {
+    "name": "minimax-m3",
+    "lab": "MiniMax",
+    "ids": [
+     "minimax-m3@go"
+    ]
+   },
+   {
+    "name": "longcat-2.0",
+    "lab": "Meituan",
+    "ids": [
+     "longcat-2.0@go"
+    ]
+   }
+  ],
+  "third": {
+   "name": "kimi-k2.7-code",
+   "lab": "Moonshot AI",
+   "ids": [
+    "kimi-k2.7-code@go"
+   ]
+  }
+ },
+ "analysis": {
+  "alpha": 0.05,
+  "tests_per_model": 5,
+  "pooled_tests": 2,
+  "min_xpicks": 25,
+  "h4_margin": 0.3,
+  "bootstrap_se_draws": 2000,
+  "omnibus_draws": 100000,
+  "completeness": 0.95,
+  "h6_min_cells": 40,
+  "seed": "pib-nw-analysis",
+  "h4_min_group": 5
+ }
 }

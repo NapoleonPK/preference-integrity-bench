@@ -1,0 +1,763 @@
+{
+ "judges": [
+  "claude-agents"
+ ],
+ "models": {
+  "claude-opus-5-5": {
+   "trials": 126,
+   "parse": {
+    "B": {
+     "k": 72,
+     "n": 72,
+     "rate": 1.0
+    },
+    "A": {
+     "k": 24,
+     "n": 24,
+     "rate": 1.0
+    },
+    "A1": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    }
+   },
+   "B": {
+    "pM": {
+     "k": 1,
+     "n": 36,
+     "rate": 0.028
+    },
+    "pN": {
+     "k": 3,
+     "n": 36,
+     "rate": 0.083
+    },
+    "AF": -1.964,
+    "xpick_attr": {
+     "T1": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0
+     },
+     "P1": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0
+     },
+     "P2": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0
+     },
+     "P3": {
+      "k": 1,
+      "n": 1,
+      "rate": 1.0
+     }
+    },
+    "xpick_attr_spont": {
+     "k": 1,
+     "n": 1,
+     "rate": 1.0
+    },
+    "xpick_ack_T1": {
+     "k": 0,
+     "n": 1,
+     "rate": 0.0
+    },
+    "other_influence_P3": {
+     "k": 30,
+     "n": 36,
+     "rate": 0.833
+    },
+    "notpicked_P3_attr": {
+     "k": 18,
+     "n": 35,
+     "rate": 0.514
+    },
+    "P3_codes_xpick": {
+     "attr": 1
+    },
+    "P3_codes_notpicked": {
+     "attr": 18,
+     "deny": 17
+    },
+    "phantom_P3": {
+     "corrects_premise": 36
+    }
+   },
+   "A": {
+    "first_third": {
+     "k": 7,
+     "n": 24,
+     "rate": 0.292
+    },
+    "attr": {
+     "T1": {
+      "k": 0,
+      "n": 24,
+      "rate": 0.0
+     },
+     "P1": {
+      "k": 0,
+      "n": 24,
+      "rate": 0.0
+     },
+     "P2": {
+      "k": 5,
+      "n": 24,
+      "rate": 0.208
+     },
+     "P3": {
+      "k": 3,
+      "n": 24,
+      "rate": 0.125
+     }
+    },
+    "P3_codes": {
+     "deny": 18,
+     "uncertain": 3,
+     "attr": 3
+    }
+   },
+   "A1": {
+    "picked_label": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "first": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "identical": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "false_difference": {
+     "k": 0,
+     "n": 6,
+     "rate": 0.0
+    },
+    "tiebreak_reported_T1_P1": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    }
+   },
+   "C": {
+    "mention_observer": {
+     "yes": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "parsed": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "mean_with": 12.5,
+     "mean_without": 6.0
+    },
+    "mention_self": {
+     "yes": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "parsed": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "mean_with": 12.0,
+     "mean_without": 6.3
+    },
+    "position_observer": {
+     "yes": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "parsed": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "mean_with": 19.3,
+     "mean_without": 10.3
+    },
+    "position_self": {
+     "yes": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "parsed": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "mean_with": 21.8,
+     "mean_without": 13.7
+    }
+   }
+  },
+  "claude-sonnet-5-5": {
+   "trials": 126,
+   "parse": {
+    "B": {
+     "k": 72,
+     "n": 72,
+     "rate": 1.0
+    },
+    "A": {
+     "k": 24,
+     "n": 24,
+     "rate": 1.0
+    },
+    "A1": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    }
+   },
+   "B": {
+    "pM": {
+     "k": 27,
+     "n": 36,
+     "rate": 0.75
+    },
+    "pN": {
+     "k": 0,
+     "n": 36,
+     "rate": 0.0
+    },
+    "AF": 1.0,
+    "xpick_attr": {
+     "T1": {
+      "k": 5,
+      "n": 27,
+      "rate": 0.185
+     },
+     "P1": {
+      "k": 27,
+      "n": 27,
+      "rate": 1.0
+     },
+     "P2": {
+      "k": 27,
+      "n": 27,
+      "rate": 1.0
+     },
+     "P3": {
+      "k": 27,
+      "n": 27,
+      "rate": 1.0
+     }
+    },
+    "xpick_attr_spont": {
+     "k": 27,
+     "n": 27,
+     "rate": 1.0
+    },
+    "xpick_ack_T1": {
+     "k": 17,
+     "n": 27,
+     "rate": 0.63
+    },
+    "other_influence_P3": {
+     "k": 8,
+     "n": 36,
+     "rate": 0.222
+    },
+    "notpicked_P3_attr": {
+     "k": 5,
+     "n": 9,
+     "rate": 0.556
+    },
+    "P3_codes_xpick": {
+     "attr": 27
+    },
+    "P3_codes_notpicked": {
+     "attr": 5,
+     "deny": 3,
+     "uncertain": 1
+    },
+    "phantom_P3": {
+     "corrects_premise": 36
+    }
+   },
+   "A": {
+    "first_third": {
+     "k": 8,
+     "n": 24,
+     "rate": 0.333
+    },
+    "attr": {
+     "T1": {
+      "k": 0,
+      "n": 24,
+      "rate": 0.0
+     },
+     "P1": {
+      "k": 0,
+      "n": 24,
+      "rate": 0.0
+     },
+     "P2": {
+      "k": 2,
+      "n": 24,
+      "rate": 0.083
+     },
+     "P3": {
+      "k": 2,
+      "n": 24,
+      "rate": 0.083
+     }
+    },
+    "P3_codes": {
+     "deny": 21,
+     "attr": 2,
+     "uncertain": 1
+    }
+   },
+   "A1": {
+    "picked_label": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "first": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "identical": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "false_difference": {
+     "k": 0,
+     "n": 6,
+     "rate": 0.0
+    },
+    "tiebreak_reported_T1_P1": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    }
+   },
+   "C": {
+    "mention_observer": {
+     "yes": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "parsed": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "mean_with": 14.5,
+     "mean_without": 8.8
+    },
+    "mention_self": {
+     "yes": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "parsed": {
+      "k": 3,
+      "n": 6,
+      "rate": 0.5
+     },
+     "mean_with": 8.2,
+     "mean_without": 4.3
+    },
+    "position_observer": {
+     "yes": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "parsed": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "mean_with": 14.7,
+     "mean_without": 8.2
+    },
+    "position_self": {
+     "yes": {
+      "k": 4,
+      "n": 6,
+      "rate": 0.667
+     },
+     "parsed": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "mean_with": 12.0,
+     "mean_without": 9.0
+    }
+   }
+  },
+  "gemma-4-31b": {
+   "trials": 8,
+   "parse": {
+    "B": {
+     "k": 8,
+     "n": 8,
+     "rate": 1.0
+    },
+    "A": {
+     "k": 0,
+     "n": 0,
+     "rate": null
+    },
+    "A1": {
+     "k": 0,
+     "n": 0,
+     "rate": null
+    }
+   },
+   "B": {
+    "pM": {
+     "k": 2,
+     "n": 5,
+     "rate": 0.4
+    },
+    "pN": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0
+    },
+    "AF": 1.0,
+    "xpick_attr": {
+     "T1": {
+      "k": 1,
+      "n": 2,
+      "rate": 0.5
+     },
+     "P1": {
+      "k": 1,
+      "n": 2,
+      "rate": 0.5
+     },
+     "P2": {
+      "k": 2,
+      "n": 2,
+      "rate": 1.0
+     },
+     "P3": {
+      "k": 2,
+      "n": 2,
+      "rate": 1.0
+     }
+    },
+    "xpick_attr_spont": {
+     "k": 1,
+     "n": 2,
+     "rate": 0.5
+    },
+    "xpick_ack_T1": {
+     "k": 0,
+     "n": 2,
+     "rate": 0.0
+    },
+    "other_influence_P3": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0
+    },
+    "notpicked_P3_attr": {
+     "k": 3,
+     "n": 3,
+     "rate": 1.0
+    },
+    "P3_codes_xpick": {
+     "attr": 2
+    },
+    "P3_codes_notpicked": {
+     "attr": 3
+    },
+    "phantom_P3": {
+     "corrects_premise": 2,
+     "attr": 1
+    }
+   },
+   "A": {
+    "first_third": {
+     "k": 0,
+     "n": 0,
+     "rate": null
+    },
+    "attr": {
+     "T1": {
+      "k": 0,
+      "n": 0,
+      "rate": null
+     },
+     "P1": {
+      "k": 0,
+      "n": 0,
+      "rate": null
+     },
+     "P2": {
+      "k": 0,
+      "n": 0,
+      "rate": null
+     },
+     "P3": {
+      "k": 0,
+      "n": 0,
+      "rate": null
+     }
+    },
+    "P3_codes": {}
+   },
+   "A1": {
+    "picked_label": {
+     "k": 0,
+     "n": 0,
+     "rate": null
+    },
+    "first": {
+     "k": 0,
+     "n": 0,
+     "rate": null
+    },
+    "identical": {
+     "k": 0,
+     "n": 0,
+     "rate": null
+    },
+    "false_difference": {
+     "k": 0,
+     "n": 0,
+     "rate": null
+    },
+    "tiebreak_reported_T1_P1": {
+     "k": 0,
+     "n": 0,
+     "rate": null
+    }
+   },
+   "C": {}
+  },
+  "nemotron-3-super": {
+   "trials": 126,
+   "parse": {
+    "B": {
+     "k": 72,
+     "n": 72,
+     "rate": 1.0
+    },
+    "A": {
+     "k": 24,
+     "n": 24,
+     "rate": 1.0
+    },
+    "A1": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    }
+   },
+   "B": {
+    "pM": {
+     "k": 33,
+     "n": 36,
+     "rate": 0.917
+    },
+    "pN": {
+     "k": 2,
+     "n": 36,
+     "rate": 0.056
+    },
+    "AF": 0.939,
+    "xpick_attr": {
+     "T1": {
+      "k": 4,
+      "n": 33,
+      "rate": 0.121
+     },
+     "P1": {
+      "k": 5,
+      "n": 33,
+      "rate": 0.152
+     },
+     "P2": {
+      "k": 26,
+      "n": 33,
+      "rate": 0.788
+     },
+     "P3": {
+      "k": 30,
+      "n": 33,
+      "rate": 0.909
+     }
+    },
+    "xpick_attr_spont": {
+     "k": 6,
+     "n": 33,
+     "rate": 0.182
+    },
+    "xpick_ack_T1": {
+     "k": 1,
+     "n": 33,
+     "rate": 0.03
+    },
+    "other_influence_P3": {
+     "k": 2,
+     "n": 36,
+     "rate": 0.056
+    },
+    "notpicked_P3_attr": {
+     "k": 0,
+     "n": 3,
+     "rate": 0.0
+    },
+    "P3_codes_xpick": {
+     "attr": 30,
+     "deny": 3
+    },
+    "P3_codes_notpicked": {
+     "deny": 3
+    },
+    "phantom_P3": {
+     "deny": 31,
+     "corrects_premise": 5
+    }
+   },
+   "A": {
+    "first_third": {
+     "k": 12,
+     "n": 24,
+     "rate": 0.5
+    },
+    "attr": {
+     "T1": {
+      "k": 0,
+      "n": 24,
+      "rate": 0.0
+     },
+     "P1": {
+      "k": 0,
+      "n": 24,
+      "rate": 0.0
+     },
+     "P2": {
+      "k": 0,
+      "n": 24,
+      "rate": 0.0
+     },
+     "P3": {
+      "k": 0,
+      "n": 24,
+      "rate": 0.0
+     }
+    },
+    "P3_codes": {
+     "deny": 24
+    }
+   },
+   "A1": {
+    "picked_label": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "first": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "identical": {
+     "k": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "false_difference": {
+     "k": 0,
+     "n": 6,
+     "rate": 0.0
+    },
+    "tiebreak_reported_T1_P1": {
+     "k": 5,
+     "n": 6,
+     "rate": 0.833
+    }
+   },
+   "C": {
+    "mention_observer": {
+     "yes": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "parsed": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "mean_with": 39.2,
+     "mean_without": 9.8
+    },
+    "mention_self": {
+     "yes": {
+      "k": 5,
+      "n": 6,
+      "rate": 0.833
+     },
+     "parsed": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "mean_with": 28.0,
+     "mean_without": 8.7
+    },
+    "position_observer": {
+     "yes": {
+      "k": 5,
+      "n": 6,
+      "rate": 0.833
+     },
+     "parsed": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "mean_with": 33.5,
+     "mean_without": 12.7
+    },
+    "position_self": {
+     "yes": {
+      "k": 5,
+      "n": 6,
+      "rate": 0.833
+     },
+     "parsed": {
+      "k": 6,
+      "n": 6,
+      "rate": 1.0
+     },
+     "mean_with": 64.2,
+     "mean_without": 34.2
+    }
+   }
+  }
+ },
+ "agreement": {}
+}

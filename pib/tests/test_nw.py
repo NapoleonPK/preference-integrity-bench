@@ -65,11 +65,13 @@ def main():
         print(("PASS " if cond else "FAIL ") + msg)
 
     tops = {q["id"]: q["items"][0] for q in QDOC["questions"]}
-    for mode, expect in (("full", 360 + 120 + 18 + 120), ("pilot", 72 + 24 + 6 + 24)):
+    for mode, expect in (("full", 360 + 240 + 18 + 120), ("pilot", 72 + 24 + 6 + 24)):
         path = os.path.join(tempfile.mkdtemp(), "sim.jsonl")
         ex = NWExperiment(SilentFollower(), path, CFG, QDOC, MAT, tops, mode=mode, workers=1, log=lambda *a: None)
         check(ex.run(), f"{mode}: run complete")
         recs = [json.loads(l) for l in open(path)]
+        if mode == "full":
+            recs_full = recs
         check(len(recs) == expect, f"{mode}: {len(recs)} trials (expected {expect})")
         B = [r for r in recs if r["arm"] == "B"]
         check(all(r["other"] != r["top"] for r in B), f"{mode}: mentioned item is never the v1 TOP")
@@ -82,13 +84,35 @@ def main():
         check(pm > 0.6 and pn < 0.25, f"{mode}: simulated mention pull recovered (pM {pm:.2f}, pN {pn:.2f})")
         A = [r for r in recs if r["arm"] == "A"]
         check(all(r["turns"][0]["content"].startswith("Here is a list") for r in A), f"{mode}: Arm A has no line before the question")
-        check(all("position" in r["turns"][-2]["content"] for r in A), f"{mode}: Arm A P3 asks about position")
+        p3_pos = {MAT["probes"]["P3_position"], MAT["probes_alt"]["P3_position"]}
+        check(all(r["turns"][-2]["content"] in p3_pos for r in A), f"{mode}: Arm A P3 asks about position")
+        AB = A + B
+        alt = [r for r in AB if r["probe_set"] == "alt"]
+        if mode == "full":
+            check(0.14 < len(alt) / len(AB) < 0.26, f"full: robustness wording on {len(alt) / len(AB):.2f} of A/B trials (target 0.20)")
+            check(all(r["turns"][2]["content"] == MAT["probes_alt"]["P1"] for r in alt)
+                  and all(r["turns"][2]["content"] == MAT["probes"]["P1"] for r in AB if r["probe_set"] == "main"),
+                  "full: each trial's probes match its probe_set")
+        else:
+            check(not alt, "pilot: no robustness wording")
         first = sum(r["pick_pos"] == 0 for r in A) / len(A)
         check(all(r["status"] == "ok" for r in A) and first > 0.45, f"{mode}: Arm A picks parsed, primacy recovered ({first:.2f})")
         A1 = [r for r in recs if r["arm"] == "A1"]
         check(all(r["status"] == "ok" for r in A1) and {r["cond"] for r in A1} == {"letters", "numbers"}, f"{mode}: A1 parsed in both label schemes")
+        check(all(r["turns"][2]["content"] == MAT["probes"]["P1"] for r in A1), f"{mode}: A1 always uses the main probes")
         check(all(r["prediction"]["yes"] is False and r["prediction"]["with"] == 30 for r in recs if r["arm"] == "C"),
               f"{mode}: Arm C predictions parsed")
+    # reference observer: only the observer prompts, word for word the subject's own observer prompts
+    path = os.path.join(tempfile.mkdtemp(), "obs.jsonl")
+    ex = NWExperiment(SilentFollower(), path, CFG, QDOC, MAT, tops, mode="full", arms=["C|mention|observer", "C|position|observer"],
+                      workers=1, log=lambda *a: None)
+    ex.extra = {"observed_for": "subject"}
+    check(ex.run(), "observer run complete")
+    obs = [json.loads(l) for l in open(path)]
+    check(len(obs) == 60 and all(r["cond"].endswith("_observer") and r["observed_for"] == "subject" for r in obs),
+          f"observer: {len(obs)} trials, observer prompts only (expected 60)")
+    own = {r["key"]: r["turns"][0]["content"] for r in recs_full if r["arm"] == "C"}
+    check(all(own[r["key"]] == r["turns"][0]["content"] for r in obs), "observer prompts identical to the subject's")
     L = ["A", "B", "C", "D"]
     for text, want in [("I'd go with **Option C** because", "C"), ("B. It has the best notes", "B"),
                        ("Option 2 looks best", None), ("They are all identical, so any of A, B, C or D", None),
@@ -96,6 +120,8 @@ def main():
         got = parse_option(text, L)
         check(got == want, f"parse_option({text!r}) = {got} (want {want})")
     check(parse_option("Option 3 is my pick", ["1", "2", "3", "4"]) == "3", "parse_option numbers")
+    p2 = parse_prediction("Yes.  With the mention: 14. Without it: 7.  Being told...")
+    check(p2 == {"yes": True, "with": 14, "without": 7}, f"parse_prediction sentence-final numbers {p2}")
     p = parse_prediction("Yes. With the mention: 40%. Without: 15%.")
     check(p == {"yes": True, "with": 40, "without": 15}, f"parse_prediction {p}")
     print("ALL PASS" if not fails else f"{fails} FAILED")

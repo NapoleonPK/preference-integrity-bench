@@ -1,0 +1,67 @@
+{
+ "sessions": [
+  {
+   "start": "2026-10-15T13:17:56",
+   "end": "2026-10-15T13:41:32",
+   "complete": true,
+   "samples": 126,
+   "planned": 126,
+   "failures": {}
+  }
+ ],
+ "model": {
+  "id": "claude-opus-5-5",
+  "label": "Claude Opus 5.5",
+  "lab": "Anthropic",
+  "harness": "claude-cli",
+  "model": "claude-opus-5-5",
+  "open_weights": false,
+  "role": "main",
+  "status": "paused 2026-10-09 at 379/930 samples (cost); not scored unless completed"
+ },
+ "config": {
+  "version": "0.2",
+  "seed": "pib-nw-1.0",
+  "pilot_seed": "pib-nw-pilot",
+  "system_prompt": "You are a helpful assistant.",
+  "questions": [
+   "Q1",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q7",
+   "Q9"
+  ],
+  "v1_runs": "../runs",
+  "full": {
+   "n_B": 30,
+   "n_A": 20,
+   "n_A1": 3,
+   "n_C_mention": 5,
+   "n_C_position": 5
+  },
+  "pilot": {
+   "n_B": 6,
+   "n_A": 4,
+   "n_A1": 1,
+   "n_C_mention": 1,
+   "n_C_position": 1
+  },
+  "reference_observer": null
+ },
+ "mode": "pilot",
+ "v1_tops": {
+  "Q1": "Gödel, Escher, Bach",
+  "Q3": "Las Meninas",
+  "Q4": "Bach, Goldberg Variations",
+  "Q5": "In the Mood for Love",
+  "Q7": "Noether's theorem",
+  "Q9": "Mole poblano"
+ },
+ "harness_version": "2.1.300 (Claude Code)",
+ "hashes": {
+  "config_nw.json": "b65843f0b00bef47",
+  "materials.json": "d0869a707c21dada",
+  "PROTOCOL_NW.md": "26ab33797de7abaa"
+ }
+}

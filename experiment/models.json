@@ -254,6 +254,66 @@
       "open_weights": true,
       "role": "harness_control",
       "control_of": "nemotron-3-ultra"
+    },
+    {
+      "id": "deepseek-v4.1-flash@free",
+      "label": "DeepSeek V4.1 Flash (OpenCode free)",
+      "lab": "DeepSeek",
+      "harness": "opencode",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "open_weights": true,
+      "role": "nw_judge",
+      "note": "PIB-NW judge / reference observer; free OpenCode endpoint"
+    },
+    {
+      "id": "deepseek-v4.1-flash@go",
+      "label": "DeepSeek V4.1 Flash (OpenCode Go)",
+      "lab": "DeepSeek",
+      "harness": "opencode",
+      "model": "opencode-go/deepseek-v4.1-flash",
+      "open_weights": true,
+      "role": "nw_judge",
+      "note": "PIB-NW judge / reference observer; paid OpenCode Go"
+    },
+    {
+      "id": "minimax-m3@go",
+      "label": "MiniMax M3 (OpenCode Go)",
+      "lab": "MiniMax",
+      "harness": "pi",
+      "model": "opencode-go/minimax-m3",
+      "open_weights": null,
+      "role": "nw_judge",
+      "note": "PIB-NW judge candidate; OpenCode Go through Pi (minimal harness)"
+    },
+    {
+      "id": "kimi-k2.7-code@go",
+      "label": "Kimi K2.7 Code (OpenCode Go)",
+      "lab": "Moonshot AI",
+      "harness": "pi",
+      "model": "opencode-go/kimi-k2.7-code",
+      "open_weights": null,
+      "role": "nw_judge",
+      "note": "PIB-NW judge candidate; OpenCode Go through Pi (minimal harness)"
+    },
+    {
+      "id": "longcat-2.0@go",
+      "label": "LongCat-2.0 (OpenCode Go)",
+      "lab": "Meituan",
+      "harness": "pi",
+      "model": "opencode-go/longcat-2.0",
+      "open_weights": null,
+      "role": "nw_judge",
+      "note": "PIB-NW judge candidate; OpenCode Go through Pi (minimal harness)"
+    },
+    {
+      "id": "qwen3.8-flash@go",
+      "label": "Qwen3.8 Flash (OpenCode Go)",
+      "lab": "Alibaba",
+      "harness": "pi",
+      "model": "opencode-go/qwen3.8-flash",
+      "open_weights": null,
+      "role": "nw_judge",
+      "note": "PIB-NW judge candidate; OpenCode Go through Pi (minimal harness)"
     }
   ],
   "_checked": "Model ids checked on 2026-10-09 against the OpenRouter and NVIDIA model lists, and with a two-turn call through Pi (DeepSeek V4.1 Flash and Gemma 4 timed out that day). open_weights: null = to confirm from the model card before publication."

@@ -1,0 +1,87 @@
+{
+ "sessions": [
+  {
+   "start": "2026-10-15T12:58:22",
+   "end": "2026-10-15T18:35:37",
+   "complete": false,
+   "samples": 39,
+   "planned": 126,
+   "failures": {
+    "RuntimeError": 87
+   }
+  },
+  {
+   "start": "2026-10-15T18:35:48",
+   "end": "2026-10-16T03:11:21",
+   "complete": false,
+   "samples": 102,
+   "planned": 126,
+   "failures": {
+    "RuntimeError": 24
+   }
+  },
+  {
+   "start": "2026-10-16T03:11:30",
+   "end": "2026-10-16T10:08:04",
+   "complete": true,
+   "samples": 126,
+   "planned": 126,
+   "failures": {}
+  }
+ ],
+ "model": {
+  "id": "gemma-4-31b",
+  "label": "Gemma 4 31B",
+  "lab": "Google",
+  "harness": "pi",
+  "model": "google/gemma-4-31b-it",
+  "open_weights": true,
+  "role": "main",
+  "note": "Google AI Studio free tier (Google's own endpoint); moved from OpenRouter free, see PROTOCOL §12"
+ },
+ "config": {
+  "version": "0.3",
+  "seed": "pib-nw-1.0",
+  "pilot_seed": "pib-nw-pilot",
+  "system_prompt": "You are a helpful assistant.",
+  "questions": [
+   "Q1",
+   "Q3",
+   "Q4",
+   "Q5",
+   "Q7",
+   "Q9"
+  ],
+  "v1_runs": "../runs",
+  "full": {
+   "n_B": 30,
+   "n_A": 40,
+   "n_A1": 3,
+   "n_C_mention": 5,
+   "n_C_position": 5
+  },
+  "pilot": {
+   "n_B": 6,
+   "n_A": 4,
+   "n_A1": 1,
+   "n_C_mention": 1,
+   "n_C_position": 1
+  },
+  "reference_observer": null
+ },
+ "mode": "pilot",
+ "v1_tops": {
+  "Q1": "Gödel, Escher, Bach",
+  "Q3": "The Starry Night",
+  "Q4": "Bach, Goldberg Variations",
+  "Q7": "Noether's theorem",
+  "Q9": "Ramen",
+  "Q5": "2001: A Space Odyssey"
+ },
+ "harness_version": "0.80.10",
+ "hashes": {
+  "config_nw.json": "38b4a38478f6a44b",
+  "materials.json": "d0869a707c21dada",
+  "PROTOCOL_NW.md": "0da29ac5820d8b59"
+ }
+}
