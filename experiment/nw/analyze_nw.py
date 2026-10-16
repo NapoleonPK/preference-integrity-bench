@@ -429,6 +429,10 @@ def analyze(per_model_recs, code, observer, cfg=CFG):
         res, p = model_analysis(m, per_model_recs[m], code, rng, cfg)
         out["models"][m] = res
         pv.update(p)
+    out["exploratory"] = {}                 # outside the roster: reported, never in the Holm family (deviation 1)
+    for m in cfg.get("exploratory", []):
+        if m in per_model_recs:
+            out["exploratory"][m], _ = model_analysis(m, per_model_recs[m], code, rng, cfg)
     gated = [m for m in cfg["roster"] if out["models"][m].get("passes_h1")]
     out["H4_pooled"], pv["pooled|H4"] = pooled_h4(per_model_recs, gated, code, rng, an)
     out["H6"], pv["pooled|H6"] = h6(per_model_recs, gated, code, observer, an["h6_min_cells"])
@@ -471,7 +475,7 @@ def main():
     a = ap.parse_args()
     per, observer, code, how = load(a.mode)
     planned = 6 * 2 * CFG[a.mode]["n_B"] + 6 * CFG[a.mode]["n_A"] + 6 * CFG[a.mode]["n_A1"] + 6 * 2 * (CFG[a.mode]["n_C_mention"] + CFG[a.mode]["n_C_position"])
-    complete = {m: rs for m, rs in per.items() if m in CFG["roster"] and len(rs) >= A["completeness"] * planned}
+    complete = {m: rs for m, rs in per.items() if m in CFG["roster"] + CFG.get("exploratory", []) and len(rs) >= A["completeness"] * planned}
     res = analyze(complete, code, observer)
     res.update(mode=a.mode, coding=how, incomplete={m: len(rs) for m, rs in per.items() if m not in complete}, planned_per_model=planned)
     d = os.path.join(NW, "results_nw" if a.mode == "full" else f"results_nw_{a.mode}")

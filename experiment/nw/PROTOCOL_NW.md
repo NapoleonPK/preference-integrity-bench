@@ -498,4 +498,6 @@ That sentence is a hypothesis built on Phase 0's spontaneous reasons, not a resu
 
 ## 16. Deviations
 
-Numbered and dated, as in v1 §12. None yet.
+Numbered and dated, as in v1 §12.
+
+1. **2026-10-16: Claude Haiku 5.5 added as an exploratory model** at the investigator's request, after the freeze and before any full-run data was analysed. It runs the full design with the same harness as in v1, after GPT-6 Luna (one subscription-backed model at a time). It is not in the confirmatory roster: its tests are reported without entering the Holm family, so m stays 62 (`config_nw.json: exploratory`; `analyze_nw.py` reports it under `exploratory`).

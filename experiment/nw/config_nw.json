@@ -83,5 +83,8 @@
   "h6_min_cells": 40,
   "seed": "pib-nw-analysis",
   "h4_min_group": 5
- }
+ },
+ "exploratory": [
+  "claude-haiku-5-5"
+ ]
 }
